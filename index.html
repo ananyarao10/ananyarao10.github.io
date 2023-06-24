@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+        <link rel="icon" type="image/x-icon" href="tab_icon.png">
+        <title>Ananya Rao</title>
+    </head>
+    <body>
+
+        <div id="home_page_div">
+            <img class="ananya_pic" src="ananya.png">
+        </div>
+
+        <br>
+        <br>
+        <br>
+        
+        <div class="button_div">
+                <a class= "menu-button" id="home-page" href="#home_page_div">home</a>
+                <a class= "menu-button" href="#about_me_div">about me</a>
+                <a class= "menu-button" href="#my_journey_div">my journey</a>
+                <a class= "menu-button" href="#skills_div">my skills</a>
+                <a class= "menu-button" href="#graphic_design_div">graphic design</a>
+        </div>
+
+        <div>
+            <img class="div_separator" src="div_separator.png">
+        </div>
+
+        <div id="about_me_div">
+            <img class="corner_img" src="corner_img.png">
+            <img onclick="myFunction()" class="light_dark_img" src="light_dark.png">
+            <h1 class="about_me">- about me -</h1>
+            <div>
+                <img class="about_me_img" src="about_me_img.jpeg">
+            </div>
+            <div>
+                <p class="about_me_txt">I am majoring in <strong><span style="color:rgba(235,88,25,255);">Computer Science</span></strong> with a minor in <strong><span style="color:#005DB7;">Data Science</span></strong> at Rice University. Inside and outside of Rice, I have been able to step outside of my academic comfort zone. <br><br> 
+                I enjoy surrounding myself with <strong><span style="color:rgba(3,116,82,255);">high achieving</span></strong> peers and mentors who embrace <strong><span style="color:rgba(195,41,47,255);">curiosity</span></strong> and learning new things. Placing myself in <strong><span style="color:rgba(229,175,131,255);"> challenging</span></strong> situations has taught me the importance of <strong><span style="color:rgba(255,202,0,255);">hard work</span></strong> and perseverance. <br><br> 
+                My programming skills include <strong><span style="color:#005DB7;">Python</span></strong>, <strong><span style="color:rgba(3,116,82,255);">Java</span></strong>, <strong><span style="color:rgba(195,41,47,255);">JavaScript</span></strong>, <strong><span style="color:rgba(229,175,131,255);">HTML</span></strong>, and <strong><span style="color:rgba(255,202,0,255);">CSS</span></strong>. <br><br> 
+                My interests include the intersection between <strong><span style="color:rgba(235,88,25,255);">technology</span></strong> and <strong><span style="color:#005DB7;">healthcare</span></strong>, the power of <strong><span style="color:rgba(3,116,82,255);">data analytics</span></strong>, and using <strong><span style="color:rgba(195,41,47,255);">UI/UX</span></strong> to create accessible and efficient technological solutions. </p>
+            </div>
+        </div>
+
+        <script>
+            function myFunction() {
+               var element = document.body;
+               element.classList.toggle("dark_mode");
+            }
+        </script>
+
+        <div class="auto_type_div">
+            <h1>I'm <span class="auto-type"></span></h1>
+        </div>
+
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+        <script>
+            var typed = new Typed(".auto-type", {
+                strings: ["determined", "creative", "collaborative"],
+                typeSpeed: 150,
+                backSpeed: 150,
+                loop: true
+            })
+        </script>   
+
+
+        <div>
+            <img class="div_separator" src="div_separator.png">
+        </div>
+
+        <div id="my_journey_div">
+            <img class="corner_img" src="corner_img.png">
+            <img onclick="myFunction()" class="light_dark_img" src="light_dark.png">
+        <h1 class="my_journey">- my journey -</h1>
+        <ul>
+            <li class="timeline_piece" style="--accent-color:rgba(235,88,25,255)">
+                <div class="date">May 2023</div>
+                <div class="title">Technical Lead at iCode</div>
+                <div class="link">learn more <u><a href="https://icodeschool.com/memorial/" target="blank">here</a></u></div>
+                <div class="descr">Responsible for delivering iCode curriculum while creating a fun learning experience for the students. Camp topics ranged from using Tinker Cad to print 3D models using a 3D printer to programming drone flight paths using Python3.</div>
+            </li>
+            <li class="timeline_piece" style="--accent-color:#005DB7">
+                <div class="date">April 2023</div>
+                <div class="title">HackRice Publicity/Registration Director</div>
+                <div class="link">learn more <u><a href="https://hack.rice.edu/" target="blank">here</a></u></div>
+                <div class="descr">Oversaw student-based outreach using social media, spearheaded the hackathon’s theme selection process, planned the registration process, used Figma to design the logo, and coordinated advertising efforts.</div>
+            </li>
+            <li class="timeline_piece" style="--accent-color:rgba(3,116,82,255)">
+                <div class="date">April 2023</div>
+                <div class="title">Jones College Executive Cabinet Secretary</div>
+                <div class="link">learn more <u><a href="https://jones.rice.edu/" target="blank">here</a></u></div>
+                <div class="descr">Elected to take notes during cabinet and pre-cabinet meetings, send out bi-weekly newsletter with important announcements to all students part of Jones college, and responsible for organizing monthly birthday posters.</div>
+            </li>
+            <li class="timeline_piece" style="--accent-color:rgba(255,202,0,255)">
+                <div class="date">January 2023</div>
+                <div class="title">Be the Match Volunteer/Drive Coordinator</div>
+                <div class="link">learn more <u><a href="https://bethematch.org/" target="blank">here</a></u></div>
+                <div class="descr">Organized a drive for Be the Match on Rice campus to encourage Rice students to register as blood marrow donors (able to get over 170 students to register).</div>
+            </li>
+            <li class="timeline_piece" style="--accent-color:rgba(195,41,47,255)">
+                <div class="date">December 2022</div>
+                <div class="title">Computer Science Undergraduate Research Assistant</div>
+                <div class="link">learn more <u><a href="https://profiles.rice.edu/faculty/devika-subramanian" target="blank">here</a></u></div>
+                <div class="descr">Assisting Dr. Subramanian with her project to create a deep learning model for detecting lesions on chest x-rays. Responsible for annotating normal and Covid lung images and learning about how deep learning models work</div>
+            </li>
+        </ul>
+        </div>
+
+        <div>
+            <img class="div_separator" src="div_separator.png">
+        </div>
+
+        <div id="skills_div">
+            <img class="corner_img" src="corner_img.png">
+            <img onclick="myFunction()" class="light_dark_img" src="light_dark.png">
+            <h1 class="my_skills">- my skills -</h1>
+            <div class="skill-grid">
+
+                <div class="container">
+                  <img src="skills-photos/python.png" alt="Python" class="image">
+                  <div class="skill-name">Python</div>
+                  <div class="overlay">
+                    <div class="text">Classes like an Introduction to Algorithmic Thinking and an Introduction to Computational Thinking at Rice have helped me to solidify my Python programming skills. I have been programming in Python for about 2 years and am proficient in this language.</div>
+                  </div>
+                </div>
+          
+                <div class="container">
+                  <img src="skills-photos/java.png" alt="Java" class="image">
+                  <div class="skill-name">Java</div>
+                  <div class="overlay">
+                    <div class="text">I have self-studied Java with the help of books and online tutorials to prepare for my Java programming class next semester.</div>
+                  </div>
+                </div>
+          
+                <div class="container">
+                  <img src="skills-photos/html.png" alt="HTML" class="image">
+                  <div class="skill-name">HTML</div>
+                  <div class="overlay">
+                    <div class="text">Through an online web development course and practice with programming and desining my own websites, I have become proficient in programming in HTML. I also taught a web-development summer camp which allowed me to further solidify my skills.</div>
+                  </div>
+                </div>
+          
+                <div class="container">
+                  <img src="skills-photos/css.png" alt="CSS" class="image">
+                  <div class="skill-name">CSS</div>
+                  <div class="overlay">
+                    <div class="text">Through an online web development course and practice with programming and desining my own websites, I have become proficient in programming in CSS. I also taught a web-development summer camp which allowed me to further solidify my skills.</div>
+                  </div>
+                </div>
+          
+                <div class="container">
+                  <img src="skills-photos/figma.jpeg" alt="Figma" class="image">
+                  <div class="skill-name">Figma</div>
+                  <div class="overlay">
+                    <div class="text">As a member of the Rice Graphic Design club, participating in various design sprints and website redesign projects have allowed me to gain experience desining with Figma. From creating logos and website prototypes, to experimenting with different web plugins and tools, Figma has allowed me to explore my passion for graphic design.</div>
+                  </div>
+                </div>
+          
+                <div class="container">
+                  <img src="skills-photos/latex_logo.webp" alt="LaTeX" class="image">
+                  <div class="skill-name">LaTeX</div>
+                  <div class="overlay">
+                    <div class="text">Through using LaTeX for writing up class programming assignments, I have become proficient in using the software. </div>
+                  </div>
+                </div>
+          
+                <div class="container">
+                  <img src="skills-photos/spanish.jpeg" alt="Spanish" class="image">
+                  <div class="skill-name">Spanish</div>
+                  <div class="overlay">
+                    <div class="text">I have been learning Spanish for 8 years and fluent in communicating, writing, and reading. Last, semester I took Spanish for the Business World and enjoyed applying my Spanish skills in a practical setting.</div>
+                  </div>
+                </div>
+          
+                <div class="container">
+                  <img src="skills-photos/uiux-design.svg" alt="UI/UX" class="image">
+                  <div class="skill-name">UI/UX</div>
+                  <div class="overlay">
+                    <div class="text">As a computer scientist, I have a strong passion for designing technology that is easy to use, aesthetically pleasing, and effective. Working on different design projects has allowed me to refine my UI/UX skills.</div>
+                  </div>
+                </div>
+          
+              </div>
+        </div>
+
+        <div>
+            <img class="div_separator" src="div_separator.png">
+        </div>
+
+        <div id="graphic_design_div">
+            <img class="corner_img" src="corner_img.png">
+            <img onclick="myFunction()" class="light_dark_img" src="light_dark.png">
+            <h1 class="graphic_design">- graphic design -</h1>
+            <p class="graphic_txt">select a thumbnail below to view a larger image of my design</p> 
+            <div id="image-gallery">
+                <img id="current-image" src="graphic-design-photos/image10.jpg">
+                <div id="image-thumbs"></div>
+            </div>
+        </div>
+
+        <script src="graphic_design_gallery.js"></script>
+        
+        <div>
+            <img class="div_separator" src="div_separator.png">
+        </div>
+        
+        <div class="main_contact_div">
+            <img class="corner_img" src="corner_img.png">
+            <img onclick="myFunction()" class="light_dark_img" src="light_dark.png">
+        <div class="contact_me_div">
+            <h1 class="contact_me">C</h1>
+            <h1 class="contact_me">O</h1>
+            <h1 class="contact_me">N</h1>
+            <h1 class="contact_me">T</h1>
+            <h1 class="contact_me">A</h1>
+            <h1 class="contact_me">C</h1>
+            <h1 class="contact_me">T</h1>
+            <h1 class="contact_me">&nbsp;</h1>
+            <h1 class="contact_me">M</h1>
+            <h1 class="contact_me">E</h1>
+        </div>
+
+            <br>
+
+            <div class="contact_btns">
+                <a href="https://github.com/ananyarao10" class="contact_btn" id="github" target="blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/ananya-rao-281821246/" class="contact_btn" target="blank">LinkedIn</a>
+                <a href="mailto:ananya.rao@gmail.com" class="contact_btn">Send me an Email</a>
+            </div>
+
+            <br>
+
+            <p class="created_text">created by Ananya Rao 2023</p>
+        </div>
+
+    </body>
+</html>
