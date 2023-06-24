@@ -11,4 +11,6 @@ Using HTML, CSS, and JavaScript, I created this website to share more about who 
 ## Author
 
 Ananya Rao 
+Sophomore at Rice University studying Computer Science
+<ins>ananya.rao@rice.edu</ins>
 
