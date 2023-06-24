@@ -10,7 +10,7 @@ Using HTML, CSS, and JavaScript, I created this website to share more about who 
 
 ## Author
 
-Ananya Rao 
-Sophomore at Rice University studying Computer Science
+Ananya Rao <br />
+Sophomore at Rice University studying Computer Science <br />
 <ins>ananya.rao@rice.edu</ins>
 
