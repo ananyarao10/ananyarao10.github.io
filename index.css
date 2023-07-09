@@ -213,16 +213,16 @@ a:active { text-decoration: none; }
     row-gap: 20px;
   }
   .skill-name {
-    font-size: 25px;
-    margin-left: 90px;
+    font-size: 30px;
+    margin-left: 73px;
     margin-top: 25px;
     font-weight: 600;
   }
   .container {
     position: relative;
-    width: 50%;
-    margin-left: 120px;
-    margin-top: 60px;
+    width: 35%;
+    margin-left: 100px;
+    margin-top: 70px;
   }
   
   .image {
@@ -248,7 +248,7 @@ a:active { text-decoration: none; }
   
   .container:hover .overlay {
     opacity: 1;
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   
   .text {
