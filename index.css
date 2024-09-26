@@ -220,7 +220,7 @@ a:active { text-decoration: none; }
   }
   .container {
     position: relative;
-    width: 35%;
+    width: 28%;
     margin-left: 100px;
     margin-top: 70px;
   }
@@ -267,7 +267,7 @@ a:active { text-decoration: none; }
 
 .graphic_design {
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   padding-top: 3%;
   font-size: 50px;
   text-align:center;
