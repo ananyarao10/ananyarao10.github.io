@@ -142,6 +142,10 @@ a:active { text-decoration: none; }
   color: rgba(229,175,131,255);
 }
 
+.yellow {
+  color: rgba(255,202,0,255);
+}
+
   .journey-title {
     text-align: center;
     font-size: 28px;
@@ -203,7 +207,7 @@ a:active { text-decoration: none; }
 
   .my_skills {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     padding-top: 3%;
     font-size: 50px;
     text-align:center;
@@ -216,22 +220,23 @@ a:active { text-decoration: none; }
     row-gap: 20px;
   }
   .skill-name {
-    font-size: 30px;
+    font-size: 20px;
     margin-left: 73px;
     margin-top: 25px;
     font-weight: 600;
   }
+  
   .container {
     position: relative;
-    width: 28%;
+    width: 25%;
     margin-left: 100px;
     margin-top: 70px;
   }
   
   .image {
     display: block;
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     border-radius: 20px;
   }
   
@@ -241,8 +246,8 @@ a:active { text-decoration: none; }
     bottom: 0;
     left: 0;
     right: 0;
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     border-radius: 20px;
     opacity: 0;
     transition: .4s ease;
@@ -337,7 +342,6 @@ ul {
   margin-inline: auto;
 }
 
-/* line */
 ul::before {
   content: "";
   grid-column: 1;
@@ -346,14 +350,10 @@ ul::before {
   border-radius: calc(var(--line-w) / 2);
 }
 
-/* columns*/
-
-/* row gaps */
 ul li:not(:last-child) {
   margin-bottom: var(--row-gap);
 }
 
-/* card */
 ul li {
   grid-column: 2;
   --inlineP: 1.5rem;
@@ -363,7 +363,6 @@ ul li {
   grid-template-rows: min-content min-content min-content;
 }
 
-/* date */
 ul li .date {
   --dateH: 3rem;
   height: var(--dateH);
@@ -383,7 +382,6 @@ ul li .date {
   border-radius: calc(var(--dateH) / 2) 0 0 calc(var(--dateH) / 2);
 }
 
-/* date flap */
 ul li .date::before {
   content: "";
   width: var(--inlineP);
@@ -397,7 +395,6 @@ ul li .date::before {
   right: 0;
 }
 
-/* circle */
 ul li .date::after {
   content: "";
   position: absolute;
@@ -412,7 +409,6 @@ ul li .date::after {
   right: calc(100% + var(--col-gap) + var(--line-w) / 2);
 }
 
-/* title descr */
 ul li .title,
 ul li .descr,
 ul li .link {
@@ -450,7 +446,6 @@ ul li .descr {
     grid-column: 3;
   }
 
-  /* start second card */
   ul li:nth-child(2) {
     grid-row: 2/4;
   }
@@ -469,7 +464,6 @@ ul li .descr {
   }
 }
 
-/* shadows */
 ul li .title::before,
 ul li .descr::before {
   content: "";
@@ -495,10 +489,6 @@ ul li .descr::before {
 .my_journey_header {
   margin-bottom: 50px;
   font-size: 50px;
-}
-.timeline_piece:hover {
-  transform: translateY(-3%);
-  transform: scaleY(1.1);
 }
 
 .main_contact_div {
@@ -550,16 +540,3 @@ background-color: rgba(3,116,82,255);
   position: relative;
   top: 100px;
 }
-
-
-/* 
-colors:
-
-rgba(235,88,25,255) --> burnt orange
-005DB7 --> navy blue
-rgba(3,116,82,255) --> emerald green
-rgba(195,41,47,255) --> ruby red
-rgba(229,175,131,255) --> beige/tan
-rgba(255,202,0,255) --> yellow
-
-*/

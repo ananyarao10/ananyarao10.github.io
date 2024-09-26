@@ -1,4 +1,3 @@
-// Animate function
 function stepAnimateText(element, animation, delay){
 
     var text = $(element).text();
@@ -11,10 +10,8 @@ function stepAnimateText(element, animation, delay){
     }
   }
   
-  // Init on load
   stepAnimateText('.fade','bounceInDown', 0.1);
   
-  // Buttons
   $('.button.button-fadeindown').click(function(){
     var delay = $('select').val();
     stepAnimateText('.fade','fadeInDown', delay);
