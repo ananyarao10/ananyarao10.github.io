@@ -106,7 +106,7 @@ a:active { text-decoration: none; }
 }
 
 .about_me_img {
-    height: 310px;
+    height: 330px;
     margin-left: 500px;
     float: left;
     margin-left: 400px;
@@ -147,12 +147,7 @@ a:active { text-decoration: none; }
     font-size: 28px;
     font-weight: 600;
   }
-  .company-logo {
-    height: 150px;
-    width: 250px;
-    margin-top: 15px;
-    border-radius: 20px;
-  }
+
   .about_me_grid {
     display: grid;
     grid-template-columns: 500px 1fr;
@@ -287,7 +282,7 @@ a:active { text-decoration: none; }
 }
 
 #image-gallery { 
-    width: 600px; 
+    width: 500px; 
     margin: 0 auto;
   }
   
