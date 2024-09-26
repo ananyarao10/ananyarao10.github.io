@@ -9,11 +9,6 @@ body {
     color: black;
 }
 
-.dark_mode {
-  background-color: black;
-  color: white;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -64,12 +59,6 @@ html {
 
 .corner_img {
   height: 70px;
-}
-
-.light_dark_img {
-  height: 50px;
-  position: absolute;
-  right: 20px;
 }
 
 .menu-button {
@@ -133,6 +122,25 @@ a:active { text-decoration: none; }
     margin-right: 200px;
 }
 
+.orange {
+  color: rgba(235, 88, 25, 255);
+}
+
+.blue {
+  color: #005DB7;
+}
+
+.green {
+  color: rgba(3,116,82,255);
+}
+
+.red {
+  color: rgba(195,41,47,255);
+}
+
+.tan {
+  color: rgba(229,175,131,255);
+}
 
   .journey-title {
     text-align: center;
@@ -193,7 +201,7 @@ a:active { text-decoration: none; }
   .journey-info {
     margin-left: 350px;
     margin-top: 25px;
-    width: 700px;
+    width: 600px;
     text-align: center;
   }
 
