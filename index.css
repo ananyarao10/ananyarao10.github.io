@@ -231,6 +231,7 @@ a:active { text-decoration: none; }
     width: 25%;
     margin-left: 100px;
     margin-top: 70px;
+    padding: 5px;
   }
   
   .image {
