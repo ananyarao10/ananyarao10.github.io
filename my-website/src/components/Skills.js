@@ -1,19 +1,24 @@
 import React from "react";
 import "../style/Skills.css"
-import python from "../../src/python.jpg";
+import python from "../../src/python.png";
 import react from "../../src/react.png";
 import java from "../../src/java.png";
+import aws from "../../src/aws.png";
+import C from "../../src/C.png";
+import node from "../../src/node.png";
+import ts from "../../src/ts.png";
+import go from "../../src/go.png";
 
 const Skills = () => {
   const skills = [
     { name: "Python", img: python },
     { name: "React", img: react },
     { name: "Java", img: java },
-    { name: "CSS", img: "path/to/css-logo.png" },
-    { name: "HTML", img: "path/to/html-logo.png" },
-    { name: "Python", img: "path/to/python-logo.png" },
-    { name: "SQL", img: "path/to/sql-logo.png" },
-    { name: "Git", img: "path/to/git-logo.png" },
+    { name: "AWS", img: aws },
+    { name: "Go", img: go },
+    { name: "NodeJS", img: node },
+    { name: "TypeScript", img: ts },
+    { name: "C", img: C },
   ];
 
   return (

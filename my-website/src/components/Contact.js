@@ -36,7 +36,6 @@ const Contact = () => {
       <div className="contact-container">
         <img className="contact" src={contact} alt="Contact" width="300" />
         <div className="contact-form-container">
-          <h2>Contact Form</h2>
           <form onSubmit={handleSubmit} className="contact-form">
             <div className="form-group">
               <label htmlFor="name">Name:</label>
