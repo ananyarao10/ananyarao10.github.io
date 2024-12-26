@@ -1,0 +1,32 @@
+/* Container that holds the animation */
+.animation-container {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    overflow: hidden; /* Hides the content that overflows the container */
+  }
+  
+  /* The moving flower line */
+  .flower-line {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    width: 200%; /* Makes sure the flowers repeat for seamless animation */
+    animation: moveFlowers 50s linear infinite; /* Animates from left to right */
+  }
+  
+  /* Flower size */
+  .flower-line .flower {
+    font-size: 2rem;
+  }
+  
+  /* Keyframes to move flowers from left to right */
+  @keyframes moveFlowers {
+    0% {
+      transform: translateX(-100%); /* Start off-screen from the left */
+    }
+    100% {
+      transform: translateX(100%); /* Move to the right, leaving space for the loop */
+    }
+  }
+  
