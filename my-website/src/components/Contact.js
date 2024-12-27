@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import emailjs from "emailjs-com";
 import contact from "../../src/contact.jpg";
 import "../style/Contact.css"
 
@@ -22,10 +23,20 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      console.log(formData);
+      await emailjs.send(
+        "service_v50mtiq", // service id
+        "abcd12345", // template id
+        {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        },
+        "a1InZIPk0RXFbynSX" // public key
+      );
       setStatus("Message Sent!");
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
+      console.error(error);
       setStatus("Error sending message.");
     }
   };
