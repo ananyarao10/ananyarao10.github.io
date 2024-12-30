@@ -15,7 +15,7 @@ const Skills = () => {
     { name: "React", img: react },
     { name: "Java", img: java },
     { name: "AWS", img: aws },
-    { name: "Go", img: go },
+    { name: "GoLang", img: go },
     { name: "NodeJS", img: node },
     { name: "TypeScript", img: ts },
     { name: "C", img: C },
@@ -28,6 +28,7 @@ const Skills = () => {
         {skills.map((skill, index) => (
           <div key={index} className="skill-item">
             <img src={skill.img} alt={skill.name} className="skill-image" />
+            <div className="skill-label">{skill.name}</div>
           </div>
         ))}
       </div>

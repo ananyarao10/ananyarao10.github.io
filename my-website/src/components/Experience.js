@@ -67,6 +67,26 @@ const Experience = () => {
           className="timeline_piece"
           style={{ "--accent-color": "#FE9898" }}
         >
+          <div className="date">April 2023</div>
+          <div className="title">
+            HackRice PR & Registration Director
+          </div>
+          <div className="link">
+            learn more{" "}
+            <u>
+              <a href="https://www.hackrice.com/" target="_blank" rel="noopener noreferrer">
+                here
+              </a>
+            </u>
+          </div>
+          <div className="descr">
+          Directed outreach campaigns, managed registration logistics, and spearheaded initiatives that led to a record-breaking number of HackRice project submissions.
+          </div>
+        </li>
+        <li
+          className="timeline_piece"
+          style={{ "--accent-color": "#FDDE42" }}
+        >
           <div className="date">Aug 2023</div>
           <div className="title">
             Student Computing Consultant
