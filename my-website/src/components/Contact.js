@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import emailjs from "emailjs-com";
-import contact from "../../src/contact.jpg";
+import contact from "../../src/images/contact.jpg";
 import "../style/Contact.css"
 
 const Contact = () => {
@@ -54,6 +54,7 @@ const Contact = () => {
                 type="text"
                 id="name"
                 name="name"
+                placeholder="jane doe"
                 value={formData.name}
                 onChange={handleChange}
                 required
@@ -65,6 +66,7 @@ const Contact = () => {
                 type="email"
                 id="email"
                 name="email"
+                placeholder="janedoe@gmail.com"
                 value={formData.email}
                 onChange={handleChange}
                 required
@@ -75,6 +77,7 @@ const Contact = () => {
               <textarea
                 id="message"
                 name="message"
+                placeholder="type your message here"
                 value={formData.message}
                 onChange={handleChange}
                 required

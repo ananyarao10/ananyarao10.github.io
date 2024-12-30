@@ -1,5 +1,6 @@
 import React from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import Home from "./components/Home";
 import About from "./components/About";
 import Experience from "./components/Experience";
@@ -10,28 +11,31 @@ import "./style/App.css";
 const App = () => {
   return (
     <Router>
-      <nav className="navbar">
-        <Link to="/">HOME</Link>
-        <Link to="/about">ABOUT</Link>
-        <Link to="/experience">EXPERIENCE</Link>
-        <Link to="/skills">SKILLS</Link>
-        <Link to="/contact">CONTACT ME</Link>
-      </nav>
-      <div className="sections">
-        <div id="Home">
-          <Home />
-        </div>
-        <div id="About">
-          <About />
-        </div>
-        <div id="Experience">
-          <Experience />
-        </div>
-        <div id="Skills">
-          <Skills />
-        </div>
-        <div id="ContactMe">
-          <Contact />
+      <div>
+        <nav className="navbar">
+          <Link smooth to="#home">HOME</Link>
+          <Link smooth to="#about">ABOUT</Link>
+          <Link smooth to="#experience">EXPERIENCE</Link>
+          <Link smooth to="#skills">SKILLS</Link>
+          <Link smooth to="#contact">CONTACT ME</Link>
+        </nav>
+
+        <div className="sections">
+          <section id="home">
+            <Home />
+          </section>
+          <section id="about">
+            <About />
+          </section>
+          <section id="experience">
+            <Experience />
+          </section>
+          <section id="skills">
+            <Skills />
+          </section>
+          <section id="contact">
+            <Contact />
+          </section>
         </div>
       </div>
     </Router>

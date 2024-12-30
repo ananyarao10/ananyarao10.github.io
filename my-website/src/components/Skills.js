@@ -1,13 +1,13 @@
 import React from "react";
 import "../style/Skills.css"
-import python from "../../src/python.png";
-import react from "../../src/react.png";
-import java from "../../src/java.png";
-import aws from "../../src/aws.png";
-import C from "../../src/C.png";
-import node from "../../src/node.png";
-import ts from "../../src/ts.png";
-import go from "../../src/go.png";
+import python from "../../src/images/python.png";
+import react from "../../src/images/react.png";
+import java from "../../src/images/java.png";
+import aws from "../../src/images/aws.png";
+import C from "../../src/images/C.png";
+import node from "../../src/images/node.png";
+import ts from "../../src/images/ts.png";
+import go from "../../src/images/go.png";
 
 const Skills = () => {
   const skills = [
