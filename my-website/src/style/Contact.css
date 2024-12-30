@@ -76,4 +76,35 @@
     color: green;
     margin-top: 10px;
 }
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .download-button,
+  .linkedin-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .download-button:hover,
+  .linkedin-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .linkedin-button {
+    background-color: #0077b5;
+  }
+  
+  .linkedin-button:hover {
+    background-color: #005d8f;
+  }
   

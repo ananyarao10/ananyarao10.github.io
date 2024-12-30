@@ -6,11 +6,21 @@ const Experience = () => {
     <div className="section">
       <h1 className="experience-title">Experience</h1>
       <ul>
+      <li
+          className="timeline_piece"
+          style={{ "--accent-color": "#06D504" }}
+        >
+          <div className="date">June 2025</div>
+          <div className="title">Software Engineering Intern at JPMC</div>
+          <div className="descr">
+            Incoming intern in the Plano office for summer 2025!
+          </div>
+        </li>
         <li
           className="timeline_piece"
           style={{ "--accent-color": "#FE9898" }}
         >
-          <div className="date">June 2024</div>
+          <div className="date">June 2024 - August 2024</div>
           <div className="title">
             Software Engineering Intern at JPMC
           </div>
@@ -26,7 +36,7 @@ const Experience = () => {
           className="timeline_piece"
           style={{ "--accent-color": "#FDDE42" }}
         >
-          <div className="date">April 2024</div>
+          <div className="date">April 2024 - September 2024</div>
           <div className="title">
             HackRice Tracks/Workshops Director
           </div>
@@ -48,7 +58,7 @@ const Experience = () => {
           className="timeline_piece"
           style={{ "--accent-color": "#06D504" }}
         >
-          <div className="date">Dec 2023</div>
+          <div className="date">Dec 2023 - Present</div>
           <div className="title">Jones Webmaster</div>
           <div className="link">
             learn more{" "}
@@ -67,7 +77,7 @@ const Experience = () => {
           className="timeline_piece"
           style={{ "--accent-color": "#FE9898" }}
         >
-          <div className="date">April 2023</div>
+          <div className="date">April 2023 - September 2023</div>
           <div className="title">
             HackRice PR & Registration Director
           </div>
@@ -87,7 +97,7 @@ const Experience = () => {
           className="timeline_piece"
           style={{ "--accent-color": "#FDDE42" }}
         >
-          <div className="date">Aug 2023</div>
+          <div className="date">Aug 2023 - Present</div>
           <div className="title">
             Student Computing Consultant
           </div>

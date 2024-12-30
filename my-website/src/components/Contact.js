@@ -2,6 +2,18 @@ import React, {useState} from "react";
 import emailjs from "emailjs-com";
 import contact from "../../src/images/contact.jpg";
 import "../style/Contact.css"
+import resume from "../../src/resume.pdf";
+
+const handleDownloadResume = () => {
+  const link = document.createElement("a");
+  link.href = resume; 
+  link.download = "resume.pdf"; 
+  link.click();
+};
+
+const handleLinkedInClick = () => {
+  window.open("https://www.linkedin.com/in/ananya-rao-281821246/", "_blank");
+};
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -44,6 +56,14 @@ const Contact = () => {
   return (
     <div className="section">
       <h1>Contact Me</h1>
+      <div className="buttons">
+        <button className="download-button" onClick={handleDownloadResume}>
+          Download My Resume
+        </button>
+        <button className="linkedin-button" onClick={handleLinkedInClick}>
+          LinkedIn
+        </button>
+      </div>
       <div className="contact-container">
         <img className="contact" src={contact} alt="Contact" width="300" />
         <div className="contact-form-container">
