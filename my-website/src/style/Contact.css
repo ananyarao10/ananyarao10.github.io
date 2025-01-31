@@ -5,6 +5,11 @@
     gap: 30px; 
 }
 
+.contact-title {
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+}
+
 .contact {
     max-width: 100%; 
     border-radius: 8px;

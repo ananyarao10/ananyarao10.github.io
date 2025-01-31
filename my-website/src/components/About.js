@@ -1,27 +1,61 @@
 import React from "react";
+import { motion } from "framer-motion";
 import headshot from "../../src/images/headshot.jpg";
-import "../style/About.css"
+import "../style/About.css";
 
 const About = () => {
   return (
-    <div className="section">
-      <h1>About</h1>
+    <motion.div 
+      className="section" 
+      initial={{ opacity: 0, y: 20 }} 
+      animate={{ opacity: 1, y: 0 }} 
+      transition={{ duration: 0.8 }}
+    >
+      <h1 className="about-title">About Me</h1>
+      
       <div className="about-container">
-        <img className="headshot" src={headshot} width="600" alt="professional"/>
-        <p className="description">
-        My name is Ananya Rao and I'm a junior at Rice University majoring in 
-        <b style={{ color: "#06D504" }}> Computer Science</b> with a minor in 
-        <b style={{ color: "#FDDE42" }}> Data Science</b> at Rice University. 
-        <br></br> <br></br> 
-        As an aspiring <b style={{ color: "#FDDE42" }}>software engineer</b>, I’m 
-        committed to developing innovative solutions that tackle real-world challenges. The dynamic innovation in and diverse applications of Computer Science inspire me, and my specific interests lie in <b style={{ color: "#06D504" }}> Cloud Computing</b>, <b style={{ color: "#FE9898" }}> Cybersecurity</b>, <b style={{ color: "#FDDE42" }}> Machine Learning</b>, and <b style={{ color: "#06D504" }}> Data Analytics</b>. 
-        <br></br> <br></br> 
-        Having attended the Women in Cybersecurity (<b style={{ color: "#FE9898" }}>WiCys</b>) 2024 and Grace Hopper Celebration (<b style={{ color: "#FDDE42" }}>GHC</b>) 2024 conferences, I’m passionate about fostering a <b style={{ color: "#06D504" }}> supportive</b> and <b style={{ color: "#FE9898" }}> empowering</b> community for women in Computer Science.
-        <br></br> <br></br> 
-        My <b style={{ color: "#FDDE42" }}> certifications</b> include AWS Cloud Practitioner Certification, ISC2 Certified in Cybersecurity, and the Texas National Registry of Emergency Medical Technicians (EMT). I'm currently working towards getting my AWS Solutions Architect Certification.
-      </p>
+        <motion.img 
+          className="headshot" 
+          src={headshot} 
+          alt="professional" 
+          whileHover={{ scale: 1.05 }}
+        />
+        
+        <div className="about-text">
+          <h2 className="intro">Hi, I'm Ananya!</h2>
+          <p>
+            I'm a junior at <b>Rice University</b>, majoring in  
+            <span className="highlight green"> Computer Science</span> with a minor in  
+            <span className="highlight yellow"> Data Science</span>.
+          </p>
+
+          <h3 className="section-title">What I Do</h3>
+          <p>
+            As an aspiring <span className="highlight yellow">Software Engineer</span>, I enjoy solving real-world problems with technology.
+            My main areas of interest include:
+          </p>
+
+          <ul className="skills-list">
+            <li><span className="highlight green">Cloud Computing</span></li>
+            <li><span className="highlight pink">Cybersecurity</span></li>
+            <li><span className="highlight yellow">Machine Learning</span></li>
+            <li><span className="highlight green">Data Analytics</span></li>
+          </ul>
+
+          <h3 className="section-title">Certifications</h3>
+          <p>
+            I hold the <span className="highlight yellow">AWS Cloud Practitioner Certification</span>, <span className="highlight pink">ISC2 Certified in Cybersecurity</span>,
+            and I'm an <span className="highlight green">EMT</span>. Currently working towards my AWS Solutions Architect Certification!
+          </p>
+
+          <h3 className="section-title">Community Involvement</h3>
+          <p>
+            I've attended <span className="highlight pink">WiCys 2024</span> and <span className="highlight yellow">Grace Hopper Celebration 2024</span>,
+            actively working to support women in tech!
+          </p>
+        </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

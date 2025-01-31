@@ -55,7 +55,7 @@ const Contact = () => {
 
   return (
     <div className="section">
-      <h1>Contact Me</h1>
+      <h1 className="contact-title">Contact Me</h1>
       <div className="buttons">
         <button className="download-button" onClick={handleDownloadResume}>
           Download My Resume

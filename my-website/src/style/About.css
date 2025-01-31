@@ -1,20 +1,58 @@
-.headshot {
-    position: relative;
-    padding-left: 85px;
-    padding-top: 50px;
-}
-
-.description {
-    font-size: 1.06em;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
 .about-container {
     display: flex;
-    align-items: center; 
-  }
-
-.cert-title {
-    text-align: left;
+    gap: 50px;
 }
+
+.about-title {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+  
+.headshot {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.headshot:hover {
+    transform: scale(1.05);
+}
+
+.about-text {
+    text-align: left;
+    max-width: 1000px; 
+    flex: 1; 
+}
+
+.intro {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.section-title {
+    font-size: 1.4rem;
+    margin-top: 15px;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.highlight {
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.green { background-color: #06D504; color: white; }
+.yellow { background-color: #FDDE42; color: black; }
+.pink { background-color: #FE9898; color: black; }
