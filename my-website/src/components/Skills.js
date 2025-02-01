@@ -1,34 +1,66 @@
 import React from "react";
-import "../style/Skills.css"
-import python from "../../src/images/python.png";
-import react from "../../src/images/react.png";
-import java from "../../src/images/java.png";
-import aws from "../../src/images/aws.png";
-import C from "../../src/images/C.png";
-import node from "../../src/images/node.png";
-import ts from "../../src/images/ts.png";
-import go from "../../src/images/go.png";
+import "../style/Skills.css";
+import { FaPython, FaReact, FaJava, FaAws, FaNodeJs, FaHtml5, FaDocker } from "react-icons/fa";
+import { SiGo, SiC, SiKubernetes } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io5";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { BiLogoSpringBoot } from "react-icons/bi";
+import { TbBrandTerraform } from "react-icons/tb";
+
+
+const skillsData = [
+  {
+    category: "Programming Languages",
+    skills: [
+      { name: "Python", icon: <FaPython /> },
+      { name: "Java", icon: <FaJava /> },
+      { name: "GoLang", icon: <SiGo /> },
+      { name: "C", icon: <SiC /> },
+    ],
+  },
+  {
+    category: "Frontend Development",
+    skills: [
+      { name: "React", icon: <FaReact /> },
+      { name: "JavaScript", icon: <IoLogoJavascript /> },
+      { name: "Tailwind CSS", icon: <RiTailwindCssFill /> },
+      { name: "HTML", icon: <FaHtml5 /> },
+    ],
+  },
+  {
+    category: "Backend Development",
+    skills: [
+      { name: "NodeJS", icon: <FaNodeJs /> },
+      { name: "Spring Boot", icon: <BiLogoSpringBoot /> }
+    ],
+  },
+  {
+    category: "Cloud & DevOps",
+    skills: [
+      { name: "AWS", icon: <FaAws /> },
+      { name: "Terraform", icon: <TbBrandTerraform /> },
+      { name: "Kubernetes", icon: <SiKubernetes /> },
+      { name: "Docker", icon: <FaDocker /> }
+    ],
+  },
+];
 
 const Skills = () => {
-  const skills = [
-    { name: "Python", img: python },
-    { name: "React", img: react },
-    { name: "Java", img: java },
-    { name: "AWS", img: aws },
-    { name: "GoLang", img: go },
-    { name: "NodeJS", img: node },
-    { name: "TypeScript", img: ts },
-    { name: "C", img: C },
-  ];
-
   return (
     <div className="section">
       <h1 className="skills-title">Skills</h1>
-      <div className="skills-grid">
-        {skills.map((skill, index) => (
-          <div key={index} className="skill-item">
-            <img src={skill.img} alt={skill.name} className="skill-image" />
-            <div className="skill-label">{skill.name}</div>
+      <div className="skills-container">
+        {skillsData.map((category, index) => (
+          <div key={index} className="skill-card">
+            <h2 className="skill-category">{category.category}</h2>
+            <div className="skills-grid">
+              {category.skills.map((skill, idx) => (
+                <div key={idx} className="skill-item">
+                  <div className="skill-icon">{skill.icon}</div>
+                  <div className="skill-label">{skill.name}</div>
+                </div>
+              ))}
+            </div>
           </div>
         ))}
       </div>

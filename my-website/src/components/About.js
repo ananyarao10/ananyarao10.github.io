@@ -45,7 +45,7 @@ const About = () => {
           <h3 className="section-title">Certifications</h3>
           <p>
             I hold the <span className="highlight yellow">AWS Cloud Practitioner Certification</span>, <span className="highlight pink">ISC2 Certified in Cybersecurity</span>,
-            and I'm an <span className="highlight green">EMT</span>. Currently working towards my AWS Solutions Architect Certification!
+            and I'm a licensed <span className="highlight green">EMT</span> in the state of Texas. I'm currently working towards my AWS Solutions Architect Certification.
           </p>
 
           <h3 className="section-title">Community Involvement</h3>

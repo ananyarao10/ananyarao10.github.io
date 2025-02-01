@@ -97,6 +97,11 @@ ul {
     padding-block-end: 1rem;
     font-weight: 500;
   }
+
+  ul li .date:hover {
+    font-size: 1.65rem;
+  }
+
   ul li .link {
     overflow: hidden;
     padding-block-end: 1rem;
