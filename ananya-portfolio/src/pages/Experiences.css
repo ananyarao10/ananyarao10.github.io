@@ -1,0 +1,129 @@
+.timeline-container {
+    position: relative;
+    padding-left: 20rem;
+    margin-top: 3rem;
+  }
+  
+  .timeline-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 4rem;
+    position: relative;
+  }
+  
+  .timeline-left {
+    display: flex;
+    flex-direction: column;  
+    align-items: flex-end;   
+    gap: 1rem;              
+}
+  
+.timeline-date {
+    font-size: 1.2rem;
+    color: #aaa;
+    text-align: right;
+    white-space: normal;
+    line-height: 1.2;
+    word-break: break-word;
+    align-self: flex-start;
+    padding-top: 0.1rem;
+    width: 30%;            
+    margin-right: 0.5rem;    
+    position: absolute;      
+    right: 100%;            
+}
+  
+  .timeline-date.active-date {
+    font-size: 3.0rem;
+    color: #0ff;
+    font-weight: bold;
+  }
+  
+  .timeline-dot {
+    width: 16px;
+    height: 16px;
+    background-color: #0ff;
+    border-radius: 50%;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .timeline-dot::after {
+    content: "";
+    position: absolute;
+    top: 100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: calc(100% + 5rem);
+    background-color: #0ff;
+    z-index: 100;
+  }
+  
+  .timeline-item:last-child .timeline-dot::after {
+    display: none;
+  }
+  
+  
+  .timeline-content {
+    margin-left: 6rem;
+    margin-right: 2rem;
+    background-color: #111;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-left: 4px solid #0ff;
+    box-shadow: 0 2px 6px rgba(0, 255, 255, 0.2);
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+  }
+  
+  .timeline-content.expanded {
+    max-height: 1000px;
+    opacity: 1;
+  }
+  
+  .timeline-content h3 {
+    margin: 0;
+    font-size: 2.0rem;
+    color: #0ff;
+    margin-bottom: 1rem;
+  }
+  
+  .timeline-content h4 {
+    margin: 0.2rem 0 0.8rem;
+    font-size: 1.5rem;
+    color: #ccc;
+  }
+  
+  .timeline-content p {
+    font-size: 0.95rem;
+    color: #ddd;
+  }
+  
+  .tech-tags {
+    margin-top: 0.5rem;
+  }
+  
+  .tech-tag {
+    display: inline-block;
+    background-color: #0ff;
+    color: black;
+    padding: 0.6rem 1.0rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+    margin-top: 0.3rem;
+  }
+  
+  .learn-more {
+    display: inline-block;
+    margin-top: 1.2rem;
+    margin-bottom:1.0rem;
+    font-size: 0.85rem;
+    color: #0ff;
+    text-decoration: underline;
+  }
+  

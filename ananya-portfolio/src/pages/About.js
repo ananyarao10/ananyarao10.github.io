@@ -18,7 +18,7 @@ const About = () => (
         <img src={profilePic} alt="Ananya Rao" />
       </div>
       <div className="about-text">
-        <h1>Hello! My name is Ananya Rao!</h1>
+        <h1>Hello! My name is Ananya!</h1>
         <p>I’m a senior at Rice University majoring in Computer Science with a minor in Data Science.</p>
         <p>I’m passionate about using technology to solve real-world problems and my interests lie in cloud computing, data analytics, user-focused design, and machine learning.</p>
         <p>I thrive in collaborative environments and enjoy using using my creative and critical thinking mindset to approach the work I do. I’m excited to pursue a career in this dynamic field with limitless opportunities to learn new things every day.</p>
@@ -34,7 +34,7 @@ const About = () => (
       </div>
     </main>
 
-    
+
   </div>
 );
 
