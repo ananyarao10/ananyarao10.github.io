@@ -11,6 +11,35 @@ import jpmc from '../jpmc.webp';
 import hack_rice from '../hack_rice.png';
 import ghc from '../ghc.png';
 import wicys from '../wicys.png';
+import ghc_1 from '../ghc_1.jpeg';
+import ghc_2 from '../ghc_2.jpeg';
+import ghc_3 from '../ghc_3.jpeg';
+import ghc_4 from '../ghc_4.jpeg';
+import ghc_5 from '../ghc_5.jpeg';
+import wicys_1 from '../wicys_1.jpeg';
+import wicys_2 from '../wicys_2.jpeg';
+import wicys_3 from '../wicys_3.jpeg';
+
+const projectDetails = [
+    {
+    title: "Jones College Website",
+    description: "A responsive weather dashboard using OpenWeather API and React.",
+    image: jones,
+    link: "https://jones.rice.edu/"
+    },
+    {
+    title: "NourishUS",
+    description: "Tracks income and expenses with charts and real-time calculations.",
+    image: nourish,
+    link: "https://www.figma.com/proto/ThK451j4xAAIEE32H5dNaJ/NourishUS-Prototype?t=5zi1PHTlTl0YGuOx-1"
+    },
+    {
+    title: "DeskLink",
+    description: "A personal portfolio to showcase my projects and experience.",
+    image: desklink,
+    link: "https://www.figma.com/proto/paSLuO7kz5SxlN7ec3zsta/DeskLink-Hi-Fi-Prototype?t=5zi1PHTlTl0YGuOx-1"
+    }
+];
 
 const hackathonDetails = [
   {
@@ -37,21 +66,23 @@ const conferenceDetails = [
     {
       title: "Grace Hopper",
       image: ghc,
-      description: "Built a platform to connect nonprofits with developers in a weekend sprint.",
-      link: "https://ghc.anitab.org/"
+      description: "Throughout my time at GHC I participated in a variety of workshops including hands-on experimentation with AWS DeepRacer, cryptography capabilities with Tink, resume tips and tricks, and more. I had the opportunity to connect and network with professionals in various different industries and roles and was blown away by what a supportive and inspiring community of women I was instantly welcomed into. From meeting other students in career fair lines and sharing our experiences to getting invited to an after hours Bank of America event, attending GHC is an experience I'll always treasure.",
+      link: "https://ghc.anitab.org/",
+      images: [ghc_1, ghc_2, ghc_3, ghc_4, ghc_5]
     },
     {
       title: "Women in Cybersecurity",
       image: wicys,
-      description: "Collaborated globally to develop fintech tools in 24 hours.",
-      link: "https://www.wicys.org/"
+      description: "An inclusive global community dedicated to recruiting, retaining, and advancing women in cybersecurity. I engaged in interactive panels, career development sessions, and participated in CTFs and technical bootcamps.",
+      link: "https://www.wicys.org/",
+      images: [wicys_1, wicys_2, wicys_3]
     }
-  ];
+];
 
 const Projects = () => {
-    const [openPopupIdx1, setOpenPopupIdx1] = useState(null);
-    const [openPopupIdx2, setOpenPopupIdx2] = useState(null);
-    const [openPopupIdx, setOpenPopupIdx] = useState(null);
+    const [openProjectPopup, setOpenProjectPopup] = useState(null);
+    const [openHackathonPopup, setOpenHackathonPopup] = useState(null);
+    const [openConferencePopup, setOpenConferencePopup] = useState(null);
 
     return (
     <div className="App">
@@ -61,66 +92,44 @@ const Projects = () => {
             <NavLink className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"} to="/projects">Projects</NavLink>
             <NavLink className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"} to="/experiences">Experiences</NavLink>
         </nav>
-        <main className="projects-container">
-            {[
-                {
-                title: "Jones College Website",
-                description: "A responsive weather dashboard using OpenWeather API and React.",
-                image: jones,
-                link: "https://jones.rice.edu/"
-                },
-                {
-                title: "NourishUS",
-                description: "Tracks income and expenses with charts and real-time calculations.",
-                image: nourish,
-                link: "https://www.figma.com/proto/ThK451j4xAAIEE32H5dNaJ/NourishUS-Prototype?t=5zi1PHTlTl0YGuOx-1"
-                },
-                {
-                title: "DeskLink",
-                description: "A personal portfolio to showcase my projects and experience.",
-                image: desklink,
-                link: "https://www.figma.com/proto/paSLuO7kz5SxlN7ec3zsta/DeskLink-Hi-Fi-Prototype?t=5zi1PHTlTl0YGuOx-1"
-                }
-            ].map((project, idx) => (
-                <Card key={idx} className="project-card">
-                <Card.Img variant="top" src={project.image} />
-                <Card.Body>
-                    <Card.Title className='project-title'>{project.title}</Card.Title>
-                    <Button className="view-project" variant="primary" onClick={() => setOpenPopupIdx1(idx)}>learn more →</Button>
-                </Card.Body>
-                {openPopupIdx1 === idx && (
-                <div className="popup-overlay" onClick={() => setOpenPopupIdx1(null)}>
-                    <div className="popup-content" onClick={(e) => e.stopPropagation()}>
-                    <button className="close-button" onClick={() => setOpenPopupIdx1(null)}>✖</button>
-                    <h2>{project.title}</h2>
-                    <p>{project.description}</p>
-                    <a href={project.link} target="_blank" rel="noopener noreferrer">view project</a>
-                    </div>
-                </div>
-                )}
-                </Card>
-            ))}
-        </main>
 
+        <h2 className="projects-title">projects</h2>
         <main className="projects-container">
+        {projectDetails.map((project, idx) => (
+            <Card key={idx} className="project-card">
+            <Card.Img variant="top" src={project.image} />
+            <Card.Body>
+                <Card.Title className='project-title'>{project.title}</Card.Title>
+                <Button className="view-project" variant="primary" onClick={() => setOpenProjectPopup(idx)}>learn more →</Button>
+            </Card.Body>
+            {openProjectPopup === idx && (
+            <div className="popup-overlay" onClick={() => setOpenProjectPopup(null)}>
+                <div className="popup-content" onClick={(e) => e.stopPropagation()}>
+                <button className="close-button" onClick={() => setOpenProjectPopup(null)}>✖</button>
+                <h2>{project.title}</h2>
+                <p>{project.description}</p>
+                <a href={project.link} target="_blank" rel="noopener noreferrer">view project</a>
+                </div>
+            </div>
+            )}
+            </Card>
+        ))}
+        </main>
+        
+        <h2 className="hackathon-title">hackathons</h2>
+        <main className="hackathons-container">
         {hackathonDetails.map((hackathon, idx) => (
           <Card key={idx} className="hackathon-card">
             <Card.Img variant="top" src={hackathon.image} />
             <Card.Body>
               <Card.Title className='project-title'>{hackathon.title}</Card.Title>
-              <Button
-                className="view-project"
-                variant="primary"
-                onClick={() => setOpenPopupIdx(idx)}
-              >
-                read about my experience →
-              </Button>
+              <Button className="view-project" variant="primary" onClick={() => setOpenHackathonPopup(idx)}>read about my experience →</Button>
             </Card.Body>
 
-            {openPopupIdx === idx && (
-              <div className="popup-overlay" onClick={() => setOpenPopupIdx(null)}>
+            {openHackathonPopup === idx && (
+              <div className="popup-overlay" onClick={() => setOpenHackathonPopup(null)}>
                 <div className="popup-content" onClick={(e) => e.stopPropagation()}>
-                  <button className="close-button" onClick={() => setOpenPopupIdx(null)}>✖</button>
+                  <button className="close-button" onClick={() => setOpenHackathonPopup(null)}>✖</button>
                   <h2>{hackathon.title}</h2>
                   <p>{hackathon.description}</p>
                   <a href={hackathon.link} target="_blank" rel="noopener noreferrer">learn more</a>
@@ -129,36 +138,38 @@ const Projects = () => {
             )}
           </Card>
         ))}
-      </main>
+        </main>
 
-      <main className="projects-container">
+        <h2 className="projects-title">conferences</h2>
+        <main className="conferences-container">
         {conferenceDetails.map((conference, idx) => (
           <Card key={idx} className="conference-card">
             <Card.Img variant="top" src={conference.image} />
             <Card.Body>
               <Card.Title className='project-title'>{conference.title}</Card.Title>
-              <Button
-                className="view-project1"
-                variant="primary"
-                onClick={() => setOpenPopupIdx2(idx)}
-              >
-                read about my experience →
-              </Button>
+              <Button className="view-project1" variant="primary" onClick={() => setOpenConferencePopup(idx)}>read about my experience →</Button>
             </Card.Body>
 
-            {openPopupIdx2 === idx && (
-              <div className="popup-overlay" onClick={() => setOpenPopupIdx2(null)}>
+            {openConferencePopup === idx && (
+            <div className="popup-overlay" onClick={() => setOpenConferencePopup(null)}>
                 <div className="popup-content" onClick={(e) => e.stopPropagation()}>
-                  <button className="close-button" onClick={() => setOpenPopupIdx2(null)}>✖</button>
-                  <h2>{conference.title}</h2>
-                  <p>{conference.description}</p>
-                  <a href={conference.link} target="_blank" rel="noopener noreferrer">learn more</a>
+                <button className="close-button" onClick={() => setOpenConferencePopup(null)}>✖</button>
+                <section>
+                    <h3>What it was:</h3>
+                    <p>{conference.description}</p>
+                </section>
+                <a href={conference.link} target="_blank" rel="noopener noreferrer">Learn more</a>
+                <div className="popup-gallery">
+                    {conference.images?.map((imgSrc, i) => (
+                    <img key={i} src={imgSrc} alt={`${conference.title} ${i + 1}`} />
+                    ))}
                 </div>
-              </div>
+                </div>
+            </div>
             )}
           </Card>
         ))}
-      </main>
+        </main>
     </div>
 );
 };
