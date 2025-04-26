@@ -1,6 +1,7 @@
 import './Home.css';
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     const particlesInit = async (main) => {
@@ -68,10 +69,10 @@ const Home = () => {
             <h1 className="title">ANANYA RAO</h1>
             <p className="pitch">aspiring cloud technologist driven by data and design</p>
             <div className="App-buttons">
-              <a className="App-link-button" href="/about">About</a>
-              <a className="App-link-button" href="/projects">Projects</a>
-              <a className="App-link-button" href="/experiences">Experiences</a>
-            </div>
+            <Link className="App-link-button" to="about">About</Link>
+            <Link className="App-link-button" to="projects">Projects</Link>
+            <Link className="App-link-button" to="experiences">Experiences</Link>
+          </div>
           </header>
         </div>
       </div>

@@ -9,15 +9,15 @@ function App() {
   return (
     <Router>
       <div className="App">
-      <style>
-      @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-      </style>
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/experiences" element={<Experiences />} />
+          <Route path="about" element={<About />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="experiences" element={<Experiences />} />
         </Routes>
       </div>
     </Router>
