@@ -4,49 +4,49 @@ import './Experiences.css';
 
 const experiences = [
   {
-    date: "June 2025 - August 2025",
+    date: "JUN 2025 - AUG 2025",
     title: "Software Engineering Intern",
-    company: "J.P. Morgan Chase & Co.",
+    company: "J.P. MORGAN CHASE & CO.",
     description: `Designed and developed a UI with an AWS Lambda backend that allows users resolving exceptions in the electronic trading platform to clear Kafka lag on a topic and download message files directly from S3 via API Gateway, successfully pushed my code changes to production and oversaw the production release.`,
     tech: ["React", "AWS", "Apache Kafka", "Terraform"],
-    link: "#"
+    link: "https://careers.jpmorgan.com/global/en/students/programs/software-engineer-summer"
   },
   {
-    date: "June 2024 - August 2024",
+    date: "JUN 2024 - AUG 2024",
     title: "Software Engineering Intern",
-    company: "J.P. Morgan Chase & Co.",
+    company: "J.P. MORGAN CHASE & CO.",
     description: "Designed and developed a UI with an AWS Lambda backend that allows users resolving exceptions in the electronic trading platform to clear Kafka lag on a topic and download message files directly from S3 via API Gateway, successfully pushed my code changes to production and oversaw the production release.",
     tech: ["React", "AWS", "Apache Kafka", "Terraform", "Spring Boot"],
-    link: "#"
+    link: "https://careers.jpmorgan.com/global/en/students/programs/software-engineer-summer"
   },
   {
-    date: "April 2024 - September 2024",
+    date: "APR 2024 - SEP 2024",
     title: "Tracks and Workshops Director",
-    company: "HackRice",
-    description: "Spearheaded creation of tracks and led workshops catering to over 400 participants about AI & AWS, Mathworks, Professional/Career Development, and Game Development.",
+    company: "HACKRICE 14",
+    description: "HackRice is Rice's student-led hackathon that attracts over 400 participants each year from various universities. I spearheaded creation of the three different tracks (Game Development, Education, and Healthcare) and led workshops about AI & AWS, Mathworks, Professional/Career Development, and Game Development.",
     tech: ["PyGame", "Git"],
     link: "https://www.hackrice.com/"
   },
   {
-    date: "December 2023 - Present",
+    date: "DEC 2023 - Present",
     title: "Webmagister",
-    company: "Jones Residential College",
+    company: "JONES RESIDENTIAL COLLEGE",
     description: "Ensuring up-to-date content, managing/maintaining the website, and implementing improvements to enhance user experience.",
     tech: ["Java", "Git", "Mentorship"],
     link: "https://jones.rice.edu/"
   },
   {
-    date: "April 2023 - September 2023",
+    date: "APR 2023 - SEP 2023",
     title: "PR and Registration Director",
-    company: "HackRice",
-    description: "Directed outreach campaigns, managed registration logistics, and spearheaded initiatives that led to a record-breaking number of HackRice project submissions.",
+    company: "HACKRICE 13",
+    description: "HackRice is Rice's student-led hackathon that attracts over 400 participants each year from various universities.I directed our outreach campaigns, managed registration logistics, and spearheaded initiatives that led to a record-breaking number of project submissions and registered attendees.",
     tech: ["Java", "Git", "Mentorship"],
     link: "https://www.hackrice.com/"
   },
   {
-    date: "August 2023 - Present",
+    date: "AUG 2023 - Present",
     title: "Student Computing Consultant",
-    company: "Rice Office of Information and Technology",
+    company: "OFFICE OF INFORMATION AND TECHNOLOGY",
     description: "As an SCC, I provide in-person support and trouble-shooting assistance to students, faculty, and staff at Rice with a variety of technology-related issues. I also continuously monitor our help request dashboard and respond asynchronously to questions.",
     tech: ["Java", "Git", "Mentorship"],
     link: "https://oit.rice.edu/"
@@ -73,18 +73,17 @@ const Experiences = () => {
             <div className={`timeline-item ${activeIndex === idx ? 'active' : ''}`} key={idx} onClick={() => handleCardClick(idx)}>
             <div className="timeline-left">
               <div className={`timeline-date ${activeIndex === idx ? 'active-date' : ''}`}>{exp.date}</div>
-              <div className="timeline-dot" />
+              <div className={`timeline-dot ${activeIndex === idx ? 'active-date' : ''}`} />
             </div>
             <div className={`timeline-content ${activeIndex === idx ? 'expanded' : ''}`}>
-              <h3>{exp.title}</h3>
-              <h4>{exp.company}</h4>
+              <h3 className='position'>{exp.title}</h3>
+              <a href={exp.link} className='company' target='blank'>{exp.company}</a>
               <p>{exp.description}</p>
               <div className="tech-tags">
                 {exp.tech.map((t, i) => (
                   <span className="tech-tag" key={i}>{t}</span>
                 ))}
               </div>
-              <a href={exp.link} className="learn-more">learn more</a>
             </div>
           </div>          
         ))}

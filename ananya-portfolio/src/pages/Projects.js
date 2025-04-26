@@ -22,7 +22,7 @@ import wicys_3 from '../wicys_3.jpeg';
 
 const projectDetails = [
     {
-    title: "Jones College Website",
+    title: "Jones College",
     description: "A responsive weather dashboard using OpenWeather API and React.",
     image: jones,
     link: "https://jones.rice.edu/"
@@ -43,7 +43,7 @@ const projectDetails = [
 
 const hackathonDetails = [
   {
-    title: "JPMC Code for Good",
+    title: "Code for Good",
     image: code_for_good,
     description: "Built a platform to connect nonprofits with developers in a weekend sprint.",
     link: "https://careers.jpmorgan.com/us/en/students/programs/tfsg-hackathons"
@@ -99,8 +99,10 @@ const Projects = () => {
             <Card key={idx} className="project-card">
             <Card.Img variant="top" src={project.image} />
             <Card.Body>
+              <div className='card-body'>
                 <Card.Title className='project-title'>{project.title}</Card.Title>
-                <Button className="view-project" variant="primary" onClick={() => setOpenProjectPopup(idx)}>learn more →</Button>
+                <Button className="view-project" variant="primary" onClick={() => setOpenProjectPopup(idx)}>→</Button>
+              </div>
             </Card.Body>
             {openProjectPopup === idx && (
             <div className="popup-overlay" onClick={() => setOpenProjectPopup(null)}>
@@ -122,8 +124,10 @@ const Projects = () => {
           <Card key={idx} className="hackathon-card">
             <Card.Img variant="top" src={hackathon.image} />
             <Card.Body>
-              <Card.Title className='project-title'>{hackathon.title}</Card.Title>
-              <Button className="view-project" variant="primary" onClick={() => setOpenHackathonPopup(idx)}>read about my experience →</Button>
+              <div className='card-body'>
+                <Card.Title className='project-title'>{hackathon.title}</Card.Title>
+                <Button className="view-hackathon" variant="primary" onClick={() => setOpenHackathonPopup(idx)}>→</Button>
+              </div>
             </Card.Body>
 
             {openHackathonPopup === idx && (
@@ -146,8 +150,10 @@ const Projects = () => {
           <Card key={idx} className="conference-card">
             <Card.Img variant="top" src={conference.image} />
             <Card.Body>
-              <Card.Title className='project-title'>{conference.title}</Card.Title>
-              <Button className="view-project1" variant="primary" onClick={() => setOpenConferencePopup(idx)}>read about my experience →</Button>
+              <div className='card-body'>
+                <Card.Title className='project-title'>{conference.title}</Card.Title>
+                <Button className="view-conference" variant="primary" onClick={() => setOpenConferencePopup(idx)}>→</Button>
+              </div>
             </Card.Body>
 
             {openConferencePopup === idx && (
