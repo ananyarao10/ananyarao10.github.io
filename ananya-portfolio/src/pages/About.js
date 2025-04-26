@@ -2,15 +2,51 @@ import { NavLink } from 'react-router-dom';
 import './About.css';
 import profilePic from '../profile.jpeg';
 import { MdEmail } from 'react-icons/md';
-import { FaDownload } from 'react-icons/fa';
+import { FaDownload, FaReact, FaJava, FaPython, FaNodeJs, FaAws, FaFigma } from 'react-icons/fa';
+import { FaGolang, FaSquareGithub } from "react-icons/fa6";
+import logo from '../logo.png';
+import Grid from '@mui/material/Grid';
+import { BiLogoSpringBoot } from "react-icons/bi";
+import { SiPostgresql, SiTerraform, SiKubernetes, SiC } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io5";
+import nremt from '../nremt.png';
+import isc2 from '../isc2.png';
+import cloud_practitioner from '../cloud_practitioner.png';
+import solutions_architect from '../solutions_architect.png';
+
+const skills = [
+  { name: 'Java', icon: <FaJava /> },
+  { name: 'Python', icon: <FaPython /> },
+  { name: 'React', icon: <FaReact /> },
+  { name: 'GoLang', icon: <FaGolang /> },
+  { name: 'C', icon: <SiC /> },
+  { name: 'PostgreSQL', icon: <SiPostgresql /> },
+  { name: 'JavaScript', icon: <IoLogoJavascript /> },
+  { name: 'Terraform', icon: <SiTerraform /> },
+  { name: 'Kubernetes/ Docker', icon: <SiKubernetes /> },
+  { name: 'AWS', icon: <FaAws /> },
+  { name: 'NodeJS', icon: <FaNodeJs /> },
+  { name: 'Spring Boot', icon: <BiLogoSpringBoot /> },
+  { name: 'Git', icon: <FaSquareGithub /> },
+  { name: 'Figma', icon: <FaFigma /> },
+];
+
+const certs = [
+  { name: 'AWS Cloud Practitioner', icon: <img src={cloud_practitioner} /> },
+  { name: 'ISC2', icon: <img src={isc2} /> },
+  { name: 'NREMT', icon: <img src={nremt} /> },
+  { name: 'AWS Solutions Architect', icon: <img src={solutions_architect} /> },
+];
 
 const About = () => (
   <div className="App">
     <nav className="nav-bar">
-        <NavLink className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"} to="/">Home</NavLink>
-        <NavLink className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"} to="/about">About</NavLink>
-        <NavLink className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"} to="/projects">Projects</NavLink>
-        <NavLink className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"} to="/experiences">Experiences</NavLink>
+        <NavLink to="/" className="logo-link">
+          <img src={logo} alt="Logo" className="logo-image" />
+        </NavLink>
+        <NavLink className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"} to="/about">ABOUT</NavLink>
+        <NavLink className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"} to="/projects">PROJECTS</NavLink>
+        <NavLink className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"} to="/experiences">EXPERIENCES</NavLink>
     </nav>
 
     <main className="about-container">
@@ -37,6 +73,36 @@ const About = () => (
       </div>
     </main>
 
+    <div className='skills-certs'>
+      <div className="skills-container">
+        <h2 className="skills-title">SKILLS</h2>
+        <Grid container spacing={2.5} className='skills-grid'>
+          {skills.map((skill, index) => (
+            <Grid item xs={3} key={index}>
+              <div className="skill-box">
+                <div className="skill-icon">{skill.icon}</div>
+                <div className="skill-text">{skill.name}</div>
+              </div>
+            </Grid>
+          ))}
+        </Grid>
+      </div>
+
+      <div className="certs-container">
+        <Grid container spacing={2.5} className='certs-grid'>
+          {certs.map((cert, index) => (
+            <Grid item xs={3} key={index}>
+              <div className="skill-box">
+                <div className="skill-icon">{cert.icon}</div>
+                <div className="skill-text">{cert.name}</div>
+              </div>
+            </Grid>
+          ))}
+        </Grid>
+        <h2 className="certs-title">CERTIFICATIONS</h2>
+    </div>
+
+    </div>
 
   </div>
 );

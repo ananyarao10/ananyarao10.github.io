@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import React, { useState } from 'react';
 import './Experiences.css';
+import logo from '../logo.png';
 
 const experiences = [
   {
@@ -63,10 +64,12 @@ const Experiences = () => {
   return (
     <div className="App">
       <nav className="nav-bar">
-        <NavLink to="/" className="nav-link">Home</NavLink>
-        <NavLink to="/about" className="nav-link">About</NavLink>
-        <NavLink to="/projects" className="nav-link">Projects</NavLink>
-        <NavLink to="/experiences" className="nav-link active-link">Experiences</NavLink>
+        <NavLink to="/" className="logo-link">
+          <img src={logo} alt="Logo" className="logo-image" />
+        </NavLink>
+        <NavLink to="/about" className="nav-link">ABOUT</NavLink>
+        <NavLink to="/projects" className="nav-link">PROJECTS</NavLink>
+        <NavLink to="/experiences" className="nav-link active-link">EXPERIENCES</NavLink>
       </nav>
       <main className="timeline-container">
         {experiences.map((exp, idx) => (

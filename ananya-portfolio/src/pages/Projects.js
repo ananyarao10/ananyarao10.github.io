@@ -19,6 +19,7 @@ import ghc_5 from '../ghc_5.jpeg';
 import wicys_1 from '../wicys_1.jpeg';
 import wicys_2 from '../wicys_2.jpeg';
 import wicys_3 from '../wicys_3.jpeg';
+import logo from '../logo.png';
 
 const projectDetails = [
     {
@@ -87,13 +88,15 @@ const Projects = () => {
     return (
     <div className="App">
         <nav className="nav-bar">
-            <NavLink className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"} to="/">Home</NavLink>
-            <NavLink className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"} to="/about">About</NavLink>
-            <NavLink className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"} to="/projects">Projects</NavLink>
-            <NavLink className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"} to="/experiences">Experiences</NavLink>
+            <NavLink to="/" className="logo-link">
+              <img src={logo} alt="Logo" className="logo-image" />
+            </NavLink>
+            <NavLink className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"} to="/about">ABOUT</NavLink>
+            <NavLink className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"} to="/projects">PROJECTS</NavLink>
+            <NavLink className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"} to="/experiences">EXPERIENCES</NavLink>
         </nav>
 
-        <h2 className="projects-title">projects</h2>
+        <h2 className="projects-title">PROJECTS</h2>
         <main className="projects-container">
         {projectDetails.map((project, idx) => (
             <Card key={idx} className="project-card">
@@ -118,7 +121,7 @@ const Projects = () => {
         ))}
         </main>
         
-        <h2 className="hackathon-title">hackathons</h2>
+        <h2 className="hackathon-title">HACKATHONS</h2>
         <main className="hackathons-container">
         {hackathonDetails.map((hackathon, idx) => (
           <Card key={idx} className="hackathon-card">
@@ -144,7 +147,7 @@ const Projects = () => {
         ))}
         </main>
 
-        <h2 className="projects-title">conferences</h2>
+        <h2 className="projects-title">CONFERENCES</h2>
         <main className="conferences-container">
         {conferenceDetails.map((conference, idx) => (
           <Card key={idx} className="conference-card">
