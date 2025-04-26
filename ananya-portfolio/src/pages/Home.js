@@ -69,9 +69,9 @@ const Home = () => {
             <h1 className="title">ANANYA RAO</h1>
             <p className="pitch">aspiring cloud technologist driven by data and design</p>
             <div className="App-buttons">
-            <Link className="App-link-button" to="about">About</Link>
-            <Link className="App-link-button" to="projects">Projects</Link>
-            <Link className="App-link-button" to="experiences">Experiences</Link>
+              <Link className="App-link-button" to="about">About</Link>
+              <Link className="App-link-button" to="projects">Projects</Link>
+              <Link className="App-link-button" to="experiences">Experiences</Link>
           </div>
           </header>
         </div>

@@ -40,14 +40,29 @@ const certs = [
 
 const About = () => (
   <div className="App">
-    <nav className="nav-bar">
-        <NavLink to="/" className="logo-link">
-          <img src={logo} alt="Logo" className="logo-image" />
-        </NavLink>
-        <NavLink className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"} to="/about">ABOUT</NavLink>
-        <NavLink className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"} to="/projects">PROJECTS</NavLink>
-        <NavLink className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"} to="/experiences">EXPERIENCES</NavLink>
-    </nav>
+        <nav className="nav-bar">
+          <NavLink to="/" className="logo-link">
+            <img src={logo} alt="Logo" className="logo-image" />
+          </NavLink>
+          <NavLink
+            to="about"
+            className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
+          >
+            ABOUT
+          </NavLink>
+          <NavLink
+            to="projects"
+            className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
+          >
+            PROJECTS
+          </NavLink>
+          <NavLink
+            to="experiences"
+            className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
+          >
+            EXPERIENCES
+          </NavLink>
+        </nav>
 
     <main className="about-container">
       <div className="background-blob blob_1"></div>

@@ -63,14 +63,29 @@ const Experiences = () => {
 
   return (
     <div className="App">
-      <nav className="nav-bar">
-        <NavLink to="/" className="logo-link">
-          <img src={logo} alt="Logo" className="logo-image" />
-        </NavLink>
-        <NavLink to="/about" className="nav-link">ABOUT</NavLink>
-        <NavLink to="/projects" className="nav-link">PROJECTS</NavLink>
-        <NavLink to="/experiences" className="nav-link active-link">EXPERIENCES</NavLink>
-      </nav>
+        <nav className="nav-bar">
+          <NavLink to="/" className="logo-link">
+            <img src={logo} alt="Logo" className="logo-image" />
+          </NavLink>
+          <NavLink
+            to="about"
+            className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
+          >
+            ABOUT
+          </NavLink>
+          <NavLink
+            to="projects"
+            className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
+          >
+            PROJECTS
+          </NavLink>
+          <NavLink
+            to="experiences"
+            className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
+          >
+            EXPERIENCES
+          </NavLink>
+        </nav>
       <main className="timeline-container">
         {experiences.map((exp, idx) => (
             <div className={`timeline-item ${activeIndex === idx ? 'active' : ''}`} key={idx} onClick={() => handleCardClick(idx)}>
