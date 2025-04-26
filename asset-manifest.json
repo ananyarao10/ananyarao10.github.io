@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/ananyarao10.github.io/static/css/main.bcf9481a.css",
+    "main.js": "/ananyarao10.github.io/static/js/main.ab0206c8.js",
+    "static/js/453.d7448aa8.chunk.js": "/ananyarao10.github.io/static/js/453.d7448aa8.chunk.js",
+    "static/media/jones.png": "/ananyarao10.github.io/static/media/jones.75a3ae9ca97ae9d51e34.png",
+    "static/media/logo.png": "/ananyarao10.github.io/static/media/logo.c422339f3b84f6ff02b3.png",
+    "static/media/wicys_1.jpeg": "/ananyarao10.github.io/static/media/wicys_1.bbbc15cd44be6b4a600c.jpeg",
+    "static/media/wicys_2.jpeg": "/ananyarao10.github.io/static/media/wicys_2.059adda79a1b0cbee887.jpeg",
+    "static/media/wicys_3.jpeg": "/ananyarao10.github.io/static/media/wicys_3.7c0f5fa0d6456992208d.jpeg",
+    "static/media/ghc_3.jpeg": "/ananyarao10.github.io/static/media/ghc_3.1c173d68c255b87137d2.jpeg",
+    "static/media/hack_rice.png": "/ananyarao10.github.io/static/media/hack_rice.8b9f130cde46fead14e4.png",
+    "static/media/profile.jpeg": "/ananyarao10.github.io/static/media/profile.80bf193472064614dc4a.jpeg",
+    "static/media/ghc_1.jpeg": "/ananyarao10.github.io/static/media/ghc_1.2a584861d1b8d50338b2.jpeg",
+    "static/media/solutions_architect.png": "/ananyarao10.github.io/static/media/solutions_architect.6a11b8466d5af999e3c6.png",
+    "static/media/desklink.png": "/ananyarao10.github.io/static/media/desklink.c86014e2754a05ed1787.png",
+    "static/media/code_for_good.png": "/ananyarao10.github.io/static/media/code_for_good.e5b47e0ecdd144910696.png",
+    "static/media/nourish.png": "/ananyarao10.github.io/static/media/nourish.6cf7eaaa9a86ec893101.png",
+    "static/media/ghc.png": "/ananyarao10.github.io/static/media/ghc.f37ce2c3c9335d0797a1.png",
+    "static/media/nremt.png": "/ananyarao10.github.io/static/media/nremt.ddc63d82f1a93e5cd587.png",
+    "static/media/ghc_2.jpeg": "/ananyarao10.github.io/static/media/ghc_2.b175cc38c1421bc60d2e.jpeg",
+    "static/media/cloud_practitioner.png": "/ananyarao10.github.io/static/media/cloud_practitioner.04f92f7ef992d6498205.png",
+    "static/media/wicys.png": "/ananyarao10.github.io/static/media/wicys.a1b7b653ff86ef5250a3.png",
+    "static/media/jpmc.webp": "/ananyarao10.github.io/static/media/jpmc.1432ec394cb62e7943f2.webp",
+    "static/media/isc2.png": "/ananyarao10.github.io/static/media/isc2.acb66f0dfc5854ad2612.png",
+    "index.html": "/ananyarao10.github.io/index.html",
+    "main.bcf9481a.css.map": "/ananyarao10.github.io/static/css/main.bcf9481a.css.map",
+    "main.ab0206c8.js.map": "/ananyarao10.github.io/static/js/main.ab0206c8.js.map",
+    "453.d7448aa8.chunk.js.map": "/ananyarao10.github.io/static/js/453.d7448aa8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bcf9481a.css",
+    "static/js/main.ab0206c8.js"
+  ]
+}
