@@ -32,10 +32,10 @@ const skills = [
 ];
 
 const certs = [
-  { name: 'AWS Cloud Practitioner', icon: <img src={cloud_practitioner} /> },
-  { name: 'ISC2', icon: <img src={isc2} /> },
-  { name: 'NREMT', icon: <img src={nremt} /> },
-  { name: 'AWS Solutions Architect', icon: <img src={solutions_architect} /> },
+  { name: 'AWS Cloud Practitioner', icon: <img src={cloud_practitioner} alt='cloud practitioner'/> },
+  { name: 'ISC2', icon: <img src={isc2} alt='isc2'/> },
+  { name: 'NREMT', icon: <img src={nremt} alt='nremt'/> },
+  { name: 'AWS Solutions Architect', icon: <img src={solutions_architect} alt='solutions architect'/> },
 ];
 
 const About = () => (

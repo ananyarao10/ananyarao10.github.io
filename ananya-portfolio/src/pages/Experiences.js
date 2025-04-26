@@ -9,7 +9,7 @@ const experiences = [
     title: "Software Engineering Intern",
     company: "J.P. MORGAN CHASE & CO.",
     description: `Designed and developed a UI with an AWS Lambda backend that allows users resolving exceptions in the electronic trading platform to clear Kafka lag on a topic and download message files directly from S3 via API Gateway, successfully pushed my code changes to production and oversaw the production release.`,
-    tech: ["React", "AWS", "Apache Kafka", "Terraform"],
+    tech: ["Java", "React", "AWS", "Apache Kafka", "Terraform", "Spring Boot"],
     link: "https://careers.jpmorgan.com/global/en/students/programs/software-engineer-summer"
   },
   {
@@ -17,7 +17,7 @@ const experiences = [
     title: "Software Engineering Intern",
     company: "J.P. MORGAN CHASE & CO.",
     description: "Designed and developed a UI with an AWS Lambda backend that allows users resolving exceptions in the electronic trading platform to clear Kafka lag on a topic and download message files directly from S3 via API Gateway, successfully pushed my code changes to production and oversaw the production release.",
-    tech: ["React", "AWS", "Apache Kafka", "Terraform", "Spring Boot"],
+    tech: ["Java", "React", "AWS", "Apache Kafka", "Terraform", "Spring Boot"],
     link: "https://careers.jpmorgan.com/global/en/students/programs/software-engineer-summer"
   },
   {
@@ -25,7 +25,7 @@ const experiences = [
     title: "Tracks and Workshops Director",
     company: "HACKRICE 14",
     description: "HackRice is Rice's student-led hackathon that attracts over 400 participants each year from various universities. I spearheaded creation of the three different tracks (Game Development, Education, and Healthcare) and led workshops about AI & AWS, Mathworks, Professional/Career Development, and Game Development.",
-    tech: ["PyGame", "Git"],
+    tech: ["PyGame", "Python", "Git", "Public Speaking", "Event Coordination"],
     link: "https://www.hackrice.com/"
   },
   {
@@ -33,7 +33,7 @@ const experiences = [
     title: "Webmagister",
     company: "JONES RESIDENTIAL COLLEGE",
     description: "Ensuring up-to-date content, managing/maintaining the website, and implementing improvements to enhance user experience.",
-    tech: ["Java", "Git", "Mentorship"],
+    tech: ["React", "NodeJS", "Netlify", "Figma"],
     link: "https://jones.rice.edu/"
   },
   {
@@ -41,7 +41,7 @@ const experiences = [
     title: "PR and Registration Director",
     company: "HACKRICE 13",
     description: "HackRice is Rice's student-led hackathon that attracts over 400 participants each year from various universities.I directed our outreach campaigns, managed registration logistics, and spearheaded initiatives that led to a record-breaking number of project submissions and registered attendees.",
-    tech: ["Java", "Git", "Mentorship"],
+    tech: ["Advertising and Marketing", "Graphic Design", "Canva", "Event Coordination"],
     link: "https://www.hackrice.com/"
   },
   {
@@ -49,7 +49,7 @@ const experiences = [
     title: "Student Computing Consultant",
     company: "OFFICE OF INFORMATION AND TECHNOLOGY",
     description: "As an SCC, I provide in-person support and trouble-shooting assistance to students, faculty, and staff at Rice with a variety of technology-related issues. I also continuously monitor our help request dashboard and respond asynchronously to questions.",
-    tech: ["Java", "Git", "Mentorship"],
+    tech: ["Problem Solving", "Communication", "Customer Service"],
     link: "https://oit.rice.edu/"
   }
 ];
