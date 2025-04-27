@@ -68,19 +68,19 @@ const Experiences = () => {
             <img src={logo} alt="Logo" className="logo-image" />
           </NavLink>
           <NavLink
-            to="about"
+            to="/about"
             className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
           >
             ABOUT
           </NavLink>
           <NavLink
-            to="projects"
+            to="/projects"
             className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
           >
             PROJECTS
           </NavLink>
           <NavLink
-            to="experiences"
+            to="/experiences"
             className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
           >
             EXPERIENCES

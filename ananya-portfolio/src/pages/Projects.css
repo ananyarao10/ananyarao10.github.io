@@ -343,4 +343,95 @@
     transform: scale(0);
     z-index: -1;
 }
+
+@media (max-width: 480px) {
+.popup-content {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    width: 70%;
+}
+.hackathon-title {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: right;
+    margin: 2rem 1rem 1rem 0;
+    position: relative;
+    display: inline-block;
+    color: white;
+}
+  
+.hackathon-title::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -8px;
+    height: 2px;
+    width: 25%;
+    background-color: white;
+}
+
+.hackathon-card {
+    width: 22rem;
+    height: 12.3rem;
+    background-color: #111;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+    text-align: center;
+}
+
+.conference-card {
+    width: 18rem;
+    height: 14rem;
+}
+
+.conference-card img {
+    width: 18rem;
+    max-height: 11rem;
+}
+
+.hackathon-card {
+    width: 20rem;
+    height: 10rem;
+}
+
+.hackathon-card img {
+    width: 20rem;
+    max-height: 7rem;
+}
+
+.project-card {
+    width: 20rem;
+    height: 14rem;
+}
+
+.project-card img {
+    width: 20rem;
+    max-height: 10rem;
+}
+
+.project-title {
+    font-size: 1.5rem;
+}
+
+.projects-title {
+    font-size: 1.7rem;
+}
+  
+.projects-title::after {
+    width: 60%;
+}
+
+.hackathon-title {
+    font-size: 1.7rem;
+}
+  
+.hackathon-title::after {
+    width: 65%;
+}
+}
   

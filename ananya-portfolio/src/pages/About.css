@@ -51,8 +51,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 2rem;
-  gap: 4rem;
+  padding: 1rem;
   max-width: 1600px;
   margin: 0 auto;
   color: white;
@@ -63,6 +62,7 @@
   height: 350px;
   object-fit: cover;
   border-radius: 100%;
+  margin-right: 4rem;
 }
 
 .about-text {
@@ -86,7 +86,7 @@
     flex-wrap: wrap;
     gap: 1rem;
     margin-top: 1.5rem;
-  }
+}
   
   .button-link {
     padding: 1.0rem 2rem;
@@ -99,7 +99,7 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-  }
+}
   
   .button-link:hover {
     background: rgba(33, 161, 241, 0.8);
@@ -269,4 +269,111 @@
   object-fit: contain;
   transition: transform 0.3s ease;
   cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .nav-bar {
+    justify-content: center;
+    gap: 1rem;
+    margin-right: 0;
+    padding: 1rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  .logo-image {
+    height: 35px;
+  }
+
+  .logo-link {
+    margin-left: 1rem;
+  }
+
+  .about-image img {
+    width: 150px;
+    height: 150px;
+    margin-left: 3rem;
+  }
+
+  .about-text {
+    text-align: center;
+    max-width: 480px;
+  }
+
+  .about-buttons {
+    margin-top: 1.2rem;
+    margin-left: 1.8rem;
+}
+  
+  .button-link {
+    padding: 0.9rem 1.5rem;
+}
+
+.skill-box {
+  width: 4rem;
+  height: 4rem;
+  font-size: 3rem; 
+}
+.skill-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+.skill-text {
+  width: 4rem;
+}
+
+.skills-title {
+  font-size: 1.3rem;
+}
+
+.skills-title::after {
+  width: 120%;
+}
+
+.certs-title {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3rem;
+  text-align: left;
+  margin: 0 0 2rem 1rem;
+  position: relative;
+  display: inline-block;
+  color: white;
+}
+
+.certs-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  height: 2px;
+  width: 120%;
+  background-color: white;
+}
+
+.skills-container {
+  width: 85%;
+}
+
+.certs-container {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; 
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+
+.certs-grid {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.skills-certs {
+  display: block;
+}
 }

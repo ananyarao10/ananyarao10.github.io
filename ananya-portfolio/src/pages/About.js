@@ -45,19 +45,19 @@ const About = () => (
             <img src={logo} alt="Logo" className="logo-image" />
           </NavLink>
           <NavLink
-            to="about"
+            to="/about"
             className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
           >
             ABOUT
           </NavLink>
           <NavLink
-            to="projects"
+            to="/projects"
             className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
           >
             PROJECTS
           </NavLink>
           <NavLink
-            to="experiences"
+            to="/experiences"
             className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
           >
             EXPERIENCES
@@ -82,7 +82,7 @@ const About = () => (
             <MdEmail size={20} /> Email Me
           </a>
           <a className="button-link" href="/resume.pdf" download>
-            <FaDownload size={18} /> Download My Resume
+            <FaDownload size={18} />My Resume
           </a>
         </div>
       </div>
