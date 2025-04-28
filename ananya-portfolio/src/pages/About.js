@@ -2,8 +2,8 @@ import { NavLink } from 'react-router-dom';
 import './About.css';
 import profilePic from '../profile.jpeg';
 import { MdEmail } from 'react-icons/md';
-import { FaDownload, FaReact, FaJava, FaPython, FaNodeJs, FaAws, FaFigma } from 'react-icons/fa';
-import { FaGolang, FaSquareGithub } from "react-icons/fa6";
+import { FaDownload, FaReact, FaJava, FaPython, FaNodeJs, FaAws } from 'react-icons/fa';
+import { FaGolang } from "react-icons/fa6";
 import logo from '../logo.png';
 import Grid from '@mui/material/Grid';
 import { BiLogoSpringBoot } from "react-icons/bi";
@@ -26,9 +26,7 @@ const skills = [
   { name: 'Kubernetes/ Docker', icon: <SiKubernetes /> },
   { name: 'AWS', icon: <FaAws /> },
   { name: 'NodeJS', icon: <FaNodeJs /> },
-  { name: 'Spring Boot', icon: <BiLogoSpringBoot /> },
-  { name: 'Git', icon: <FaSquareGithub /> },
-  { name: 'Figma', icon: <FaFigma /> },
+  { name: 'Spring Boot', icon: <BiLogoSpringBoot /> }
 ];
 
 const certs = [
@@ -89,6 +87,7 @@ const About = () => (
     </main>
 
     <div className='skills-certs'>
+      
       <div className="skills-container">
         <h2 className="skills-title">SKILLS</h2>
         <Grid container spacing={2.5} className='skills-grid'>
@@ -104,6 +103,7 @@ const About = () => (
       </div>
 
       <div className="certs-container">
+        <h2 className="certs-title">CERTIFICATIONS</h2>
         <Grid container spacing={2.5} className='certs-grid'>
           {certs.map((cert, index) => (
             <Grid item xs={3} key={index}>
@@ -114,7 +114,6 @@ const About = () => (
             </Grid>
           ))}
         </Grid>
-        <h2 className="certs-title">CERTIFICATIONS</h2>
     </div>
 
     </div>

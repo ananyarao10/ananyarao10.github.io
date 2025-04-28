@@ -88,7 +88,7 @@
     margin-top: 1.5rem;
 }
   
-  .button-link {
+.button-link {
     padding: 1.0rem 2rem;
     background: rgba(97, 218, 251, 0.7);
     color: black;
@@ -101,10 +101,10 @@
     gap: 0.5rem;
 }
   
-  .button-link:hover {
+.button-link:hover {
     background: rgba(33, 161, 241, 0.8);
     transform: scale(1.05);
-  }
+}
 
 .blob_1 {
     top: 5%;
@@ -162,7 +162,7 @@
   font-size: 1.8rem;
   font-weight: 700;
   text-align: right;
-  margin: 1rem 1rem 1rem 0;
+  margin: 0 1rem 2rem 1rem;
   position: relative;
   display: inline-block;
   color: white;
@@ -202,7 +202,7 @@
 }
 
 .certs-container {
-  width: 45%;
+  width: 48%;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end; 
@@ -316,9 +316,10 @@
   height: 4rem;
   font-size: 3rem; 
 }
+
 .skill-icon img {
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
 }
 
 .skill-text {
@@ -334,43 +335,22 @@
 }
 
 .certs-title {
-  font-family: "Archivo Black", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 1.3rem;
-  text-align: left;
-  margin: 0 0 2rem 1rem;
-  position: relative;
-  display: inline-block;
-  color: white;
+  margin-bottom: 1rem;
 }
 
 .certs-title::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-  height: 2px;
   width: 120%;
-  background-color: white;
 }
 
 .skills-container {
   width: 85%;
+  margin-bottom: 2rem;
 }
 
 .certs-container {
-  width: 85%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start; 
-  margin-left: 1rem;
-  margin-top: 2rem;
-}
-
-.certs-grid {
-  margin-left: 1rem;
-  margin-bottom: 1rem;
+  width: 95%;
+  margin-bottom: 2rem;
 }
 
 .skills-certs {

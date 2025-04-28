@@ -7,7 +7,7 @@
 .timeline-item {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 4rem;
+    margin-bottom: 4.4rem;
     position: relative;
 }
   
@@ -37,27 +37,34 @@
     font-family: "Archivo Black", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 3.0rem;
+    font-size: 2.8rem;
     color: #ccc;
     font-weight: bold;
 }
   
 .timeline-dot {
-  width: 16px;
-  height: 16px;
+  width: 3.1rem;
+  height: 3.1rem;
   background-color: #ccc;
   border-radius: 50%;
   flex-shrink: 0;
   position: relative;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem; 
+  font-weight: bold;
 }
 
 .timeline-dot.active-date {
   background-color: #a5b4fc;
+  color: #a5b4fc;
 }
 
 .timeline-dot:hover {
   background-color: #a5b4fc;
+  cursor: pointer;
 }
 
 .timeline-dot::after {
@@ -67,7 +74,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 2px;
-  height: calc(100% + 5rem);
+  height: calc(100% + 4.4rem);
   background-color: #ccc;
   z-index: 100;
 }
@@ -177,5 +184,9 @@
 .tech-tag {
   padding: 0.4rem 0.8rem;
 }
+}
+
+.instructions {
+  color: white;
 }
   

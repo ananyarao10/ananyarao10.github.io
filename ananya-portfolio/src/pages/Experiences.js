@@ -86,12 +86,13 @@ const Experiences = () => {
             EXPERIENCES
           </NavLink>
         </nav>
+        <h2 className='instructions'>click on a dot to learn more about an experience!</h2>
       <main className="timeline-container">
         {experiences.map((exp, idx) => (
             <div className={`timeline-item ${activeIndex === idx ? 'active' : ''}`} key={idx} onClick={() => handleCardClick(idx)}>
             <div className="timeline-left">
               <div className={`timeline-date ${activeIndex === idx ? 'active-date' : ''}`}>{exp.date}</div>
-              <div className={`timeline-dot ${activeIndex === idx ? 'active-date' : ''}`} />
+              <div className={`timeline-dot ${activeIndex === idx ? 'active-date' : ''}`}>+</div>
             </div>
             <div className={`timeline-content ${activeIndex === idx ? 'expanded' : ''}`}>
               <h3 className='position'>{exp.title}</h3>
