@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import './About.css';
 import profilePic from '../profile.jpeg';
-import { MdEmail } from 'react-icons/md';
+import { MdEmail, MdArticle } from 'react-icons/md';
 import { FaDownload, FaReact, FaJava, FaPython, FaNodeJs, FaAws } from 'react-icons/fa';
 import { FaGolang } from "react-icons/fa6";
 import logo from '../logo.png';
@@ -81,6 +81,9 @@ const About = () => (
           </a>
           <a className="button-link" href="/resume.pdf" download>
             <FaDownload size={18} />My Resume
+          </a>
+          <a className="button-link" href="https://medium.com/@ananya.rao_39962" target="_blank">
+            <MdArticle size={18} />My Blog
           </a>
         </div>
       </div>
