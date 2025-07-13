@@ -8,8 +8,8 @@ const experiences = [
     date: "JUN 2025 - AUG 2025",
     title: "Software Engineering Intern",
     company: "J.P. MORGAN CHASE & CO.",
-    description: `Designed and developed a UI with an AWS Lambda backend that allows users resolving exceptions in the electronic trading platform to clear Kafka lag on a topic and download message files directly from S3 via API Gateway, successfully pushed my code changes to production and oversaw the production release.`,
-    tech: ["Java", "React", "AWS", "Apache Kafka", "Terraform", "Spring Boot"],
+    description: `Created a full-stack web application to monitor real-time health and availability of critical applications, deployed the tool to production midway through the internship where it is now actively used across internal teams to improve operational visibility and response time. Currently architecting a second full-stack tool to automate the scheduling and delivery of asset performance reports, enabling investment advisors to streamline reporting workflows and better serve clients at scale.`,
+    tech: ["React", "Terraform", "Spring Boot"],
     link: "https://careers.jpmorgan.com/global/en/students/programs/software-engineer-summer"
   },
   {
@@ -17,7 +17,7 @@ const experiences = [
     title: "Software Engineering Intern",
     company: "J.P. MORGAN CHASE & CO.",
     description: "Designed and developed a UI with an AWS Lambda backend that allows users resolving exceptions in the electronic trading platform to clear Kafka lag on a topic and download message files directly from S3 via API Gateway, successfully pushed my code changes to production and oversaw the production release.",
-    tech: ["Java", "React", "AWS", "Apache Kafka", "Terraform", "Spring Boot"],
+    tech: ["Python", "Spring Boot", "React", "AWS", "Apache Kafka", "Terraform"],
     link: "https://careers.jpmorgan.com/global/en/students/programs/software-engineer-summer"
   },
   {
