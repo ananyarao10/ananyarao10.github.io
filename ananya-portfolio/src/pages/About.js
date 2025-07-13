@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import './About.css';
 import profilePic from '../profile.jpeg';
-import { MdEmail, MdArticle } from 'react-icons/md';
+import { MdEmail } from 'react-icons/md';
 import { FaDownload, FaReact, FaJava, FaPython, FaNodeJs, FaAws } from 'react-icons/fa';
 import { FaGolang } from "react-icons/fa6";
 import logo from '../logo.png';
@@ -30,10 +30,10 @@ const skills = [
 ];
 
 const certs = [
+  { name: 'AWS Solutions Architect', icon: <img src={solutions_architect} alt='solutions architect'/> },
   { name: 'AWS Cloud Practitioner', icon: <img src={cloud_practitioner} alt='cloud practitioner'/> },
   { name: 'ISC2', icon: <img src={isc2} alt='isc2'/> },
   { name: 'NREMT', icon: <img src={nremt} alt='nremt'/> },
-  { name: 'AWS Solutions Architect', icon: <img src={solutions_architect} alt='solutions architect'/> },
 ];
 
 const About = () => (
@@ -60,6 +60,14 @@ const About = () => (
           >
             EXPERIENCES
           </NavLink>
+          <NavLink
+            to="https://medium.com/@ananya.rao_39962"
+            target="_blank" 
+            rel="noreferrer"
+            className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
+          >
+            BLOG
+          </NavLink>
         </nav>
 
     <main className="about-container">
@@ -81,9 +89,6 @@ const About = () => (
           </a>
           <a className="button-link" href="/resume.pdf" download>
             <FaDownload size={18} />My Resume
-          </a>
-          <a className="button-link" href="https://medium.com/@ananya.rao_39962" target="_blank">
-            <MdArticle size={18} />My Blog
           </a>
         </div>
       </div>

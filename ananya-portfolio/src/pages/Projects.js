@@ -120,6 +120,14 @@ const Projects = () => {
           >
             EXPERIENCES
           </NavLink>
+          <NavLink
+            to="https://medium.com/@ananya.rao_39962"
+            target="_blank" 
+            rel="noreferrer"
+            className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
+          >
+            BLOG
+          </NavLink>
         </nav>
 
         <h2 className="projects-title">PROJECTS</h2>

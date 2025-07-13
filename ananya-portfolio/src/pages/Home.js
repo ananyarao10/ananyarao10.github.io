@@ -72,6 +72,7 @@ const Home = () => {
               <Link className="home-page-button" to="about">About</Link>
               <Link className="home-page-button" to="projects">Projects</Link>
               <Link className="home-page-button" to="experiences">Experiences</Link>
+              <Link className="home-page-button" to="https://medium.com/@ananya.rao_39962" target="_blank" rel="noreferrer">Blog</Link>
           </div>
           </header>
         </div>
