@@ -8,8 +8,8 @@ const experiences = [
     date: "JUN 2025 - AUG 2025",
     title: "Software Engineering Intern",
     company: "J.P. MORGAN CHASE",
-    description: `Created a full-stack web application to monitor real-time health and availability of critical applications, deployed the tool to production midway through the internship where it is now actively used across internal teams to improve operational visibility and response time. Currently architecting a second full-stack tool to automate the scheduling and delivery of asset performance reports, enabling investment advisors to streamline reporting workflows.`,
-    tech: ["React", "Terraform", "Spring Boot"],
+    description: `Worked on the development of a full-stack web application to monitor the real-time health and availability of critical AWM applications. We integrated caching to reduce latency and rearchitected the monitoring pipeline with aggregation to enhance clarity and reduce alert fatigue. Midway through the internship, the application was successfully deployed, where it is actively being used across internal teams to improve operational visibility and response time. Building on that success, I architected a second full-stack tool designed to streamline the scheduling and delivery of asset performance reports—empowering investment advisors to better serve their clients through automated, scalable reporting workflows. I deployed and integrated the solution into the firm's main client review application.`,
+    tech: ["React", "Jules/Jenkins", "Spring Boot"],
     link: "https://careers.jpmorgan.com/global/en/students/programs/software-engineer-summer"
   },
   {
