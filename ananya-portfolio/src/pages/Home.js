@@ -67,12 +67,9 @@ const Home = () => {
   
           <header className="App-header">
             <h1 className="title">ANANYA RAO</h1>
-            <p className="pitch">aspiring cloud technologist driven by data and design</p>
+            <p className="pitch">an aspiring cloud technologist driven by data and design</p>
             <div className='buttons'>
-              <Link className="home-page-button" to="about">About</Link>
-              <Link className="home-page-button" to="projects">Projects</Link>
-              <Link className="home-page-button" to="experiences">Experiences</Link>
-              <Link className="home-page-button" to="https://medium.com/@ananya.rao_39962" target="_blank" rel="noreferrer">Blog</Link>
+              <Link className="home-page-button" to="about">more about me →</Link>
           </div>
           </header>
         </div>

@@ -7,16 +7,16 @@ const experiences = [
   {
     date: "JUN 2025 - AUG 2025",
     title: "Software Engineering Intern",
-    company: "J.P. MORGAN CHASE",
-    description: `Worked on the development of a full-stack web application to monitor the real-time health and availability of critical AWM applications. We integrated caching to reduce latency and rearchitected the monitoring pipeline with aggregation to enhance clarity and reduce alert fatigue. Midway through the internship, the application was successfully deployed, where it is actively being used across internal teams to improve operational visibility and response time. Building on that success, I architected a second full-stack tool designed to streamline the scheduling and delivery of asset performance reports—empowering investment advisors to better serve their clients through automated, scalable reporting workflows. I deployed and integrated the solution into the firm's main client review application.`,
+    company: "JP MORGAN CHASE & CO",
+    description: `Developed of a full-stack web application to monitor the real-time health and availability of critical asset and wealth management applications. Integrated caching to reduce latency, and rearchitected the monitoring pipeline with aggregation to reduce alert fatigue. The application was successfully deployed and is actively being used across internal teams to improve operational visibility and response time. Building on that success, I architected a second full-stack tool to streamline the scheduling and delivery of asset performance reports. I deployed and integrated the solution into the firm's main client review application.`,
     tech: ["React", "Jules/Jenkins", "Spring Boot"],
     link: "https://careers.jpmorgan.com/global/en/students/programs/software-engineer-summer"
   },
   {
     date: "JUN 2024 - AUG 2024",
     title: "Software Engineering Intern",
-    company: "J.P. MORGAN CHASE",
-    description: "Designed and developed a UI with an AWS Lambda backend that allows users resolving exceptions in the electronic trading platform to clear Kafka lag on a topic and download message files directly from S3 via API Gateway, successfully pushed my code changes to production and oversaw the production release.",
+    company: "JP MORGAN CHASE & CO",
+    description: "Developed deployed a full-stack application to manage concurrent trade queues using AWS Lambda, API Gateway, Spring Boot, React, and Terraform, resulting in a 70% improvement in operational efficiency for internal production support teams. I also built a secure log-searching Lambda function capable of processing millions of encrypted Datadog logs using custom regex-based transformations; this tool was integrated into the production dashboard to resolve a critical, time-sensitive internal issue.",
     tech: ["Python", "Spring Boot", "React", "AWS", "Apache Kafka", "Terraform"],
     link: "https://careers.jpmorgan.com/global/en/students/programs/software-engineer-summer"
   },
