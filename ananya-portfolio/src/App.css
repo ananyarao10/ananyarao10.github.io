@@ -4,6 +4,10 @@
   font-style: light;
 }
 
+body {
+  background: black;
+}
+
 .App {
   width: 100%;
   text-align: center;
