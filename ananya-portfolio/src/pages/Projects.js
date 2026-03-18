@@ -18,6 +18,7 @@ import wicys_1 from '../wicys_1.jpeg';
 import wicys_2 from '../wicys_2.jpeg';
 import wicys_3 from '../wicys_3.jpeg';
 import logo from '../logo.png';
+import shama from '../shama.png';
 
 const projectDetails = [
     {
@@ -27,6 +28,14 @@ const projectDetails = [
     tools: ["React", "NodeJS", "Netlify", "Figma"],
     image: jones,
     link: "https://jones.rice.edu/"
+    },
+    {
+      title: "Shama Cycles",
+      titleee: "SHAMA CYCLES",
+      description: "Shama Cycles is a boutique bike shop in Houston specializing in custom builds, premium brands, and expert servicing. I designed and built their full website from scratch using Next.js and Tailwind CSS, creating pages for bikes, maintenance services, bike fitting, and more. The site features brand galleries with image carousels, animated section transitions, dark mode support, and a fully responsive layout. It was a great opportunity to work closely with a real client, translating their vision into a polished, production-ready product.",
+      tools: ["Next.js", "Tailwind CSS", "Vercel"],
+      image: shama,
+      link: "https://shamacycles.com/" 
     },
     {
     title: "NourishUS",
